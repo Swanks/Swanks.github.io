@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Concert+One');
+/* CIT 230 - Assignment Portal CSS Template */
+/* You may use #HEX or color names */
+
+/* * is a wildcard referring to all elements. */
+* { margin: 0; box-sizing: border-box; }
+
+body {
+    font-size: 16px;
+    line-height: 32px;
+    /* font-family:Ubuntu, sans-serif; */
+    font-family:Concert One, cursive;
+    color: #110C6C;
+}
+
+h1 {
+    font-size:24px;
+    color:whitesmoke;
+}
+
+h2 {
+    font-size:20px;
+    text-align: center;
+    border-bottom: 1px solid #A9ACB6;
+}
+
+header, main, footer {
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width:720px;
+}
+
+header, footer, footer a {
+    text-align: center;
+    background-color:#290C5E;
+    color: whitesmoke;
+}
+
+header img {
+    width: 140px;
+    height: 235px;
+    float: right;
+    box-shadow: 4px 4px 2px #D8BFD8;
+    border:2px solid #7C778A;
+    border-radius: 5px;
+}
+
+footer {
+    font-size: 12px;
+}

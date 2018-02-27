@@ -1,0 +1,35 @@
+@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+
+    /* ------------------- Navigation Bar -------------------------------- */
+    nav button { display:none; }  /* hamburger button does not need to be shown */
+
+    nav {
+        background: #9bcc76; background: -moz-linear-gradient(top, #9bcc76 0%, #55ad0d 100%); background: -webkit-linear-gradient(top, #9bcc76 0%,#55ad0d 100%); background: linear-gradient(to bottom, #9bcc76 0%,#55ad0d 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bcc76', endColorstr='#55ad0d',GradientType=0 );
+
+        margin: 1% 2%;
+    }
+
+    nav ul.hide {display: flex;}
+
+    nav ul { padding: 1%; margin: 0 2% 1% 1%; }
+
+    nav ul li { display: inline-flex; }
+
+    nav ul li a {
+        font-size: 1em;
+        padding: .8rem 1rem;
+        border: none;
+        border-right: 1px solid rgba(255,255,255,0.8);
+    }
+
+    article p.town-article img { width: 29.333%; }
+
+    /*----------------------------- Picture Gallery ---------------*/
+    div.pictureGallery {
+        grid-template-columns: repeat(3, 32%);
+    }
+    div.pictureGallery figure:hover {
+        box-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+    }
+}

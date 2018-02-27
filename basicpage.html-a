@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Rob Swank">
+        <title>Rob Swank - A Basic Web Page</title>
+        <link rel="stylesheet" type="text/css" href="styles/main-robs.css" >
+    </head>
+    <body>
+        <h3>CIT 230:09 (Winter); Winter 2018</h3>
+        <h1> Rob Swank </h1>
+        <h2> My Location: Elk Grove/Sacramento, California</h2>
+        <p>  The systems RAM: 16 GB <br>
+                HP 700-414, AKA Madd_Cow_II, with 12.0 GB RAM.<br>
+                HP Envy Notebook, 15-asi333ci, Tammys-Laptop, with 16 GB RAM.<br>
+                Toshiba, Tecra, M11, AKA Shadow, with 8 GB RAM.<br>
+                Toshiba, Tecra, Z40-A, AKA Chameleon, with 16 GB RAM.<br>
+                Toshiba, Tecra, X40-D, AKA ShadowII with 16 GB RAM.<br>
+        </p>
+        <p>	<img src="images/profile-200-273.jpg" width="200" height="273" alt="Profile Picture"></p>
+        <p>&star; <a href="http://www.byui.edu/online">BYU - Idaho Online Learning</a> &star;</p>
+    </body>
+</html>

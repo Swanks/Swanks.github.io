@@ -1,0 +1,37 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+
+    section.forecast { display:inline-block; }  /* show the 10-day forecast with the medium view and up */
+
+    article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
+
+    .hidemain {
+        display: block;
+    }
+
+    table.forecast {
+        border-collapse: collapse;
+        width: 94%;
+        margin: 0 2%;
+        display: table;
+        text-align: center;
+
+    }
+
+    table.forecast th {
+        background-color: #9CABFF;
+        color: #18286D;
+        border: 1px solid #263BB2;
+        font-size: .5rem;
+        padding: 1rem;
+    }
+
+    table.forecast td {
+        color: #18286D;
+        border: 1px solid #263BB2;
+        font-size: .5rem;
+        padding: 1rem;
+    }
+
+    table.forecast td:hover {background-color: #ffd98f;}
+}

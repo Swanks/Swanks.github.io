@@ -1,0 +1,144 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    max-width: 100%;
+    padding: 20px;
+}
+
+header {
+    background-color: 4F69FF;
+}
+
+header h1 {
+    color: #263BB2;
+    font-family: Noto+Serif, san-slab, sans-serif;
+    font-size: 2em;
+    position: relative;
+    margin: 5px;
+    padding-top: 25px;
+}
+header img {
+    float: left;
+    padding: 05px;
+    margin-right: 15px;
+}
+
+header .subheading {
+    color: #9CABFF;
+    font-family: "Open Sans", sans;
+    font-size: 1.3em;
+}
+
+nav {}
+
+nav button {}
+
+nav ul {}
+
+nav ul li {
+    font-family: "Open Sans", sans;
+    font-size: 1.5em;
+}
+nav ul li a {}
+
+nav ul li.active a {
+    background-color: #67B22F;
+}
+nav ul li a:hover {
+    color: #2F4FDA;
+}
+
+main {
+   padding: 0px 20px 20px 20px;
+}
+main h2 {
+    color: #4F69FF;
+    font-family: Noto+Serif, san-slab, sans-serif;
+    font-size: 2em;
+    padding: 10px;
+    margin: 0 0 0 15px;
+
+}
+
+main figure { margin: 0 0 .2rem 2%; width:96%;}
+
+main figure img {
+    max-height: 400px;
+    width: 100%;
+}
+
+section{
+    font-family: "Open Sans", sans;
+    padding: 15px;
+    border: 5px solid #263BB2;
+    margin: 10px;
+}
+h3 {
+    font-family: Noto+Serif, san-slab, sans-serif;
+    color: #263BB2;
+    font-size: 2.3em;
+}
+
+section picture {
+    padding: 10px 0px 20px 25px;
+    margin: -25px
+}
+
+.current{
+    display: flex;
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+.highlow, .conditions {
+    display: flex;
+    flex-flow: column;
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+.forecast {
+    display: none;
+}
+
+article {
+    font-family: "Open Sans", sans;
+    font-size: 1.3em;
+    margin: 20px;
+    line-height: 1.3em;
+    overflow: auto;
+}
+
+article h3 {
+    font-family: Noto+Serif, Cantata+One, san-slab;
+}
+
+article p.town-article picture {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    float: right;
+    font-family: "Open Sans", sans;
+    color: #FF9069;
+    width: 130%; /* fill the page in the small/phone view */
+    margin: 20px;
+}
+
+footer {
+    font-family: "Open Sans", sans;
+    font-size: 1.3em;
+    color: white;
+    background-color: #9CABFF;
+    text-align: center;
+}
+
+footer aside{}
+
+footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */

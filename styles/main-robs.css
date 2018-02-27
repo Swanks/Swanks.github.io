@@ -1,0 +1,32 @@
+@import url(https://fonts.googleapis.com/css?family=Bigshot+One);
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
+
+body	{
+    background-color: #FFF6DF;
+}
+h1	{
+    font-family: "Bigshot One", cursive, sans-serif;
+    color: #062A78;
+}
+h2, h3, h4, h5	{
+    font-family: "Bree Serif", cursive, serif;
+    color: #00581A;
+}
+p	{
+    font-family: 'Abril Fatface', cursive, sans-serif;
+    font-size: 18px;
+    line-height: 1.0em;
+    padding: 10px;
+    color: #110C6C;
+}
+#profile-image {
+    box-shadow: -5px 5px 5px #4D400F;
+    border:2px solid #4A2A04;
+    border-radius: 5px;
+}
+
+#footer	{
+    font-size:12px;
+    color: #380474;
+}

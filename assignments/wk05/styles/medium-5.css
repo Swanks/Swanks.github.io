@@ -1,0 +1,62 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+
+  nav button { display:none; }  /* hamburger button does not need to be shown */
+
+  section.forecast { display:inline-block; }  /* show the 10-day forecast with the medium view and up */
+
+  article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
+
+
+    nav ul {
+        list-style-type: none;
+        margin: 0px 20px 0px 20px;
+        padding: 10px;
+        overflow: hidden;
+        background-color: #67B22F;
+    }
+
+    nav li {
+        float: left;
+    }
+
+    nav li:hover { background-color: #ffd54f; }
+
+    nav li a {
+        display: block;
+        color: #263BB2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .hidemain {
+        display: block;
+    }
+    table.forecast {
+        border-collapse: collapse;
+        width: 94%;
+        margin: 0 2%;
+        display: table;
+        text-align: center;
+
+    }
+
+    table.forecast th {
+        background-color: #9CABFF;
+        color: #18286D;
+        border: 1px solid #263BB2;
+        font-size: .5rem;
+        padding: 1rem;
+    }
+
+    table.forecast td {
+        color: #18286D;
+        border: 1px solid #263BB2;
+        font-size: .5rem;
+        padding: 1rem;
+    }
+
+    table.forecast td:hover {background-color: #ffd98f;}
+
+}
