@@ -35,9 +35,10 @@ header, main, footer {}
     }
 
     header .subHeading {
+        color: #263BB2;
+        font-weight: bold;
         text-align: left;
         font-size: 1.6em;
-        color: #263BB2;
         margin-left: 1.5rem;
     }
 
