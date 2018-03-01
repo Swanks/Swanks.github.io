@@ -171,10 +171,10 @@ header, main, footer {}
     div.pictureGallery {
         padding: 0 2%;
         display: grid;
-        grid-template-columns: repeat(1, 100%);
+        grid-template-columns: auto;
     }
 
-    div.pictureGallery figure {margin: 1rem 0;}
+div.pictureGallery figure {margin: 2rem 0; border:1px solid #263BB2}
 
     div.pictureGallery figure img {width: 100%;}
 
