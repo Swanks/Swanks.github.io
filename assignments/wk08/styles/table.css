@@ -4,13 +4,14 @@
 
 /* --------------------------- Body -------------------------------- */
 body {
+    font-size: .9rem;
     text-align: center;
     font-family: Ubuntu, sans-serif;
     /* Declare the base font-family - from google font api or other */
 }
 /* ----------------------- background box -------------------------- */
 section {
-    width: 19rem;
+    width: 18rem;
     border: 1px solid rgba(0,0,0,0.2);
     padding: 1.5rem;
     box-shadow: 4px 4px 8px #E7FFED;
@@ -23,18 +24,23 @@ table {
     box-shadow: 6px 6px 12px #628CA6;
     border-collapse: collapse;
     text-align: center;
-    width: 19rem;
+    width: 17.5rem;
     margin: auto;
+}
+
+table th {
+    font-size: 1.5rem;
+    background-color: #7FB9C2;
+    color: black;
 }
 
 table, tr, th, td {
     text-align: center;
-    padding: .6rem;
     border: 1px solid rgba(0,0,0,0.4);;
     border-collapse: collapse;
 }
 
-th, td { padding: 10px; }
+th, td { padding: .49rem; }
 
 td { font-weight: bold; }
 
@@ -42,16 +48,10 @@ table tr:nth-child(even) { background-color: #E7F0ED; }
 
 table tr:nth-child(odd) { background-color:#E7FFED; }
 
-table th {
-    font-size: 1.8em;
-    background-color: #7FB9C2;
-}
+table tr:nth-child(1), .focus { background-color: #628CA6; color: white; }
 
+table tr:nth-child(1) { font-weight: bold; font-size: 1.2rem; }
 
-tfoot tr td, footer { background-color: #7FB9C2; }
+tfoot tr td, footer { background-color: #7FB9C2; color: black; }
 
-.whiteText {
-    background-color: #628CA6;
-    color: white;
-    font-weight: bold;
-}
+tfoot tr td { font-size: .8rem; }
