@@ -4,7 +4,8 @@
 
 /* --------------------------- Body -------------------------------- */
 body {
-    font-size: .9rem;
+    font-size: 1rem;
+    font-weight: 100;
     text-align: center;
     font-family: Ubuntu, sans-serif;
     /* Declare the base font-family - from google font api or other */
@@ -21,10 +22,9 @@ section {
 /* --------------------------- Table -------------------------------- */
 
 table {
+    width: 17.5rem;
     box-shadow: 6px 6px 12px #628CA6;
     border-collapse: collapse;
-    text-align: center;
-    width: 17.5rem;
     margin: auto;
 }
 
@@ -35,7 +35,6 @@ table th {
 }
 
 table, tr, th, td {
-    text-align: center;
     border: 1px solid rgba(0,0,0,0.4);;
     border-collapse: collapse;
 }
@@ -52,6 +51,7 @@ table tr:nth-child(1), .focus { background-color: #628CA6; color: white; }
 
 table tr:nth-child(1) { font-weight: bold; font-size: 1.2rem; }
 
-tfoot tr td, footer { background-color: #7FB9C2; color: black; }
+tfoot tr td, footer {
+    background-color: #7FB9C2; color: black; }
 
 tfoot tr td { font-size: .8rem; }
