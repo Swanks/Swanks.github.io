@@ -1,0 +1,41 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+
+    /* show the 10-day forecast with the medium view and up */
+    section.weatherForecast {
+        display: flex;
+        flex-direction: column;
+        overflow-x: scroll;
+    }
+
+    .weatherForecast th {
+        text-align: center;
+        background-color: #9CABFF;
+        color: #18286D;
+        font-size: 1em;
+        padding: 1rem;
+        border: 1px solid #263BB2;
+    }
+
+    .weatherForecast td {
+        text-align: center;
+        color: #18286D;
+        font-size: 1.1em;
+        padding: 1rem;
+        border: 1px solid #263BB2;
+    }
+    .weatherForecast tbody {
+        text-align: center;
+        font-size: 1em;
+    }
+
+    .weatherForecast td:hover {background-color: #ffd98f;}
+
+    article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
+
+    /*----------------------------- Picture Gallery ---------------*/
+    div.pictureGallery {
+        grid-template-columns: repeat(2, 50%);
+        grid-gap: 2%;
+    }
+}
