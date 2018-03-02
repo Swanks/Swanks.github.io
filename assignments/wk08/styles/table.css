@@ -41,8 +41,6 @@ table, tr, th, td {
 
 th, td { padding: .49rem; }
 
-td { font-weight: bold; }
-
 table tr:nth-child(even) { background-color: #E7F0ED; }
 
 table tr:nth-child(odd) { background-color:#E7FFED; }
@@ -51,7 +49,6 @@ table tr:nth-child(1), .focus { background-color: #628CA6; color: white; }
 
 table tr:nth-child(1) { font-weight: bold; font-size: 1.2rem; }
 
-tfoot tr td, footer {
-    background-color: #7FB9C2; color: black; }
+tfoot tr td, footer { background-color: #7FB9C2; color: black; }
 
 tfoot tr td { font-size: .8rem; }
