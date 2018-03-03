@@ -49,6 +49,10 @@ table tr:nth-child(1), .focus { background-color: #628CA6; color: white; }
 
 table tr:nth-child(1) { font-weight: bold; font-size: 1.2rem; }
 
+table tbody tr:nth-child(6) { font-style: italic; }
+
+table tbody tr:nth-child(6) [colspan]{ font-style: normal; }
+
 tfoot tr td, footer { background-color: #7FB9C2; color: black; }
 
 tfoot tr td { font-size: .8rem; }
