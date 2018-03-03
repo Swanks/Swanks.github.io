@@ -1,3 +1,4 @@
+* { box-sizing: border-box; }
 /* This main css file contains the default rules and is geared toward the small/phone view */
 
  /* This wildcard applies to all elements ensuring a box layout model */
@@ -202,3 +203,8 @@ div.pictureGallery figure {margin: 2rem 0; border:1px solid #263BB2}
     /* This structure refers to p elements that are direct children of the footer element */
 
     /* Other Class Selectors */
+    .clearfix:after {
+        content: "";
+        display: block;
+        clear: both;
+    }

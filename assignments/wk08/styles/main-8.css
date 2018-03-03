@@ -202,3 +202,8 @@
     /* This structure refers to p elements that are direct children of the footer element */
 
     /* Other Class Selectors */
+    .clearfix:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
