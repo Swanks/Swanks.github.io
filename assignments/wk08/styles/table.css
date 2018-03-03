@@ -5,7 +5,6 @@
 /* --------------------------- Body -------------------------------- */
 body {
     font-size: 1rem;
-    font-weight: 100;
     text-align: center;
     font-family: Ubuntu, sans-serif;
     /* Declare the base font-family - from google font api or other */
@@ -13,7 +12,7 @@ body {
 /* ----------------------- background box -------------------------- */
 section {
     width: 18rem;
-    border: 1px solid rgba(0,0,0,0.2);
+    border: 1.5px solid rgba(119,119,119,0.9);
     padding: 1.5rem;
     box-shadow: 4px 4px 8px #E7FFED;
     margin: auto;
@@ -23,19 +22,20 @@ section {
 
 table {
     width: 17.5rem;
-    box-shadow: 6px 6px 12px #628CA6;
+    box-shadow: 8px 8px 15px #628CA6;
     border-collapse: collapse;
     margin: auto;
 }
 
 table th {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     background-color: #7FB9C2;
     color: black;
+    font-weight: 600;
 }
 
 table, tr, th, td {
-    border: 1px solid rgba(0,0,0,0.4);;
+    border: 1.8px solid rgba(187,187,187,0.9);;
     border-collapse: collapse;
 }
 
@@ -47,12 +47,16 @@ table tr:nth-child(odd) { background-color:#E7FFED; }
 
 table tr:nth-child(1), .focus { background-color: #628CA6; color: white; }
 
-table tr:nth-child(1) { font-weight: bold; font-size: 1.2rem; }
+table tr:nth-child(1) { font-weight: 500; font-size: 1.1rem; }
 
 table tbody tr:nth-child(6) { font-style: italic; }
 
 table tbody tr:nth-child(6) [colspan]{ font-style: normal; }
 
-tfoot tr td, footer { background-color: #7FB9C2; color: black; }
+tfoot tr td, footer {
+    background-color: #7FB9C2;
+    color: black;
+    font-size: .75rem;
+    font-weight: 100;
+}
 
-tfoot tr td { font-size: .8rem; }
