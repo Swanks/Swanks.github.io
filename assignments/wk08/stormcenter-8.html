@@ -47,115 +47,101 @@
                 <li><a href="gallery-8.html">Gallery</a></li>
             </ul>
         </nav>
+        <!-- Main subject -->
 
-        <main>
-            <h2>You Helping Your Community by Reporting Weather as it Happens</h2>
-            <figure class="mainImg">
-                <img src="images/franklin-city-optimized-01a.jpg" alt="A country day at Franklin city" sizes="100vw"
-                     srcset="images/franklin-city-500.jpg 500w,
-                     images/franklin-city-800.jpg 800w,
-                     images/franklin-city-1100.jpg 1100w">
-                <figcaption>Franklin City</figcaption>
-            </figure>
+        <main class="clearfix" id="content">
+            <h2>Storm Center - Storm Reports</h2>
+            <h2> Community Weather Reporting as it Happens</h2>
 
-            <section id="weatherSummary">
-                <h3>Weather Summary</h3>
-                <div class="highlow">
-                    <p>High: 58&stormcenter-8.html176; F</p>
-                    <p>Low: 33&#176; F</p>
-                </div>
-                <div class="currentWeather">
-                    Sunny
-                    <picture>
-                        <img src="images/sunny.png" alt="Yellow Sun drawing" height="60">
-                    </picture>
-                </div>
-                <div class="currentConditions">
-                    <p>Precipitation: 0 &#037;</p>
-                    <p>Humidity: 91 &#037;</p>
-                    <p>Wind Speed: 9 mph</p>
-                    <p>Windchill: <span id="windChill"></span>&#176; F</p>
-                </div>
-            </section>
+            <!--  form  -->
+            <form action="thankyou.html" method="get" enctype="multipart/form-data" name="storm">
+                <!-- User contact info -->
+                <fieldset>
+                    <legend><span>Report Contact Information</span></legend>
+                    <label><span>Full Name:</span><input name="name" type="text" placeholder="Full Name" pattern="[a-zA-Z -._]{5,99}" required></label>
+                    <label><span>Email Address:</span><input name="email" type="email" placeholder="my.email@address.com"></label>
+                    <label><span>Phone Number:</span><input name="phone" type="tel" pattern="[0-9]{7,20}" placeholder="15131112222" required></label>
+                    <label><span> Zip Code:</span> <input name="zipcode" type="number" placeholder="Zip Code" required></label>
+                </fieldset>
 
-            <section class="weatherForecast">
-                <h3>10 Day Forecast</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Day 1</th>
-                            <th>Day 2</th>
-                            <th>Day 3</th>
-                            <th>Day 4</th>
-                            <th>Day 5</th>
-                            <th>Day 6</th>
-                            <th>Day 7</th>
-                            <th>Day 8</th>
-                            <th>Day 9</th>
-                            <th>Day 10</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>37 &#176; F</td>
-                            <td>36 &#176; F</td>
-                            <td>41 &#176; F</td>
-                            <td>49 &#176; F</td>
-                            <td>54 &#176; F</td>
-                            <td>57 &#176; F</td>
-                            <td>38 &#176; F</td>
-                            <td>41 &#176; F</td>
-                            <td>45 &#176; F</td>
-                            <td>47 &#176; F</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
+                <!-- Weather Report info -->
+                <fieldset>
+                    <legend><span>Storm Reporting Information</span></legend>
+                    <label><span>Storm Date:  </span><input name="date" type="date"></label>
+                    <label>
+                        <span>Storm Type:</span>
+                        <input type="text" name="storm" list="stormtype" placeholder="Please select...">
+                        <datalist id="stormtype">
+                            <option value="Blizzard"></option>
+                            <option value="Flash Flood"></option>
+                            <option value="Hail"></option>
+                            <option value="Heavy Rain"></option>
+                            <option value="Hurricane"></option>
+                            <option value="Snow"></option>
+                            <option value="Strong Winds"></option>
+                            <option value="Thunderstorm"></option>
+                            <option value="Tornado"></option>
+                        </datalist>
+                    </label>
 
-            <article>
-                <h2>Snow Emergency Levels</h2>
-                <p class="town-article">
+                <!-- Storm Severity rating -->
+                    <label><span>Severity of Storm - Rated (1 to 10):</span>
+                        1 <input type="range" id="rating" value="0" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"> 10
+                    </label>
 
-                    <picture>
-                         <img src="images/orig-snowy-road-pexels-photo-760971.jpg" alt="Car path through a snowy country road." sizes="50vw"
-                             srcset="images/500-snowy-road-pexels-photo-760971.jpg 500w,
-                             images/800-snowy-road-pexels-photo-760971.jpg 800w,
-                             images/1100-snowy-road-pexels-photo-760971.jpg 1100w" >
-                    </picture>
+                    <!-- Where the storm is happening -->
+                    <label><span>Region of Storm</span>
+                        <select>
+                            <option label="Select Region..." selected disabled>Select Region</option>
+                            <option label="Franklin">Franklin</option>
+                            <option label="Greenville">Greenville</option>
+                            <option label="Springfield">SpringField</option>
+                        </select>
+                    </label>
+                </fieldset>
 
-                    Due to recent heavy weather fluxuations we are being asked to review the weather emergency levels by our local authorities.  "Pursuant of Attorney General opinion 86-023, the Sheriff of a County may declare a Snow Emergency and temporarily close County and Township Roads within his jurisdiction for the preservation of the public peace. Attorney General opinion 97-015 allows the Sheriff to close State and Municipal Roads."<br>
+                    <!-- Saftey rating -->
+                <fieldset>
+                    <legend><span>How Are You Doing - Can you Provide More Weather or Saftey Details</span></legend>
+                        <label><span>Are You In Danger: </span></label>
 
-                    <br><strong class="strong1">Snow emergencies have been issued for the following counties:</strong><br><br>
+                    <label class="dangerdanger"><span class="danger">No</span>
+                        <input name="radio" type="radio" value="no" checked="checked"><span class="checker"></span>
+                    </label>
 
-                    <strong class="strong2">No snow emergencies are in effect</strong><br><br>
+                    <label class="dangerdanger"><span class="danger">Maybe</span>
+                        <input name="radio" type="radio" value="maybe"><span class="checker"></span>
+                    </label>
 
-                    <strong class="strong3">What the levels mean to you</strong><br><br>
+                    <label class="dangerdanger"><span class="danger">Yes</span>
+                        <input name="radio" type="radio" value="yes"> <span class="checker"></span>
+                    </label><br><br>
 
-                    <strong>Level 1 Snow Emergency:</strong> Roadways are hazardous with blowing and drifting snow. Roads are also icy; drive carefully.<br><br>
+                    <!-- Additional info -->
 
-                    <strong>Level 2 Snow Emergency:</strong> Roadways are hazardous with blowing and drifting snow. Only those who believe it is necessary to drive should be out on the roadways. Contact your employer to see if you should report to work.<br><br>
+                    <label><span>Additional information: </span>
+                        <textarea name="addedinfo" placeholder="Enter text  here..." rows="6" cols="70"></textarea>
+                    </label><br>
 
-                    <strong>Level 3 Snow Emergency:</strong> All roadways are closed to non-emergency personnel. No one else should be out during these conditions unless it is absolutely necessary to travel. All employees should contact their employers to see if they should report to work. Those traveling on the roadways may be subject to arrest.<br><br>
-                </p>
+                    <input type="submit" value="Submit Your Weather" class="submit">
+                </fieldset>
+            </form>
+        </main>
+        <!--  Footer  -->
+        <footer class="clearfix">
+            <aside>
+                Snap Weather<br>
+                125 Industrial Drive<br>
+                Franklin, OH 45005<br>
+                513-654-1234<br>
+                snapweather@snap.com
+            </aside>
 
-            </article>
+            <p>&copy;2018 All Rights Reserved | Snap Weather | <span id="currentdate"></span></p>
+        </footer>
 
-    </main>
-
-    <footer>
-        <aside>
-            Snap Weather<br>
-            125 Industrial Drive<br>
-            Franklin, OH 45005<br>
-            513-654-1234<br>
-            snapweather@snap.com
-        </aside>
-
-         <p>&copy;2018 All Rights Reserved | Snap Weather | <span id="currentdate"></span></p>
-    </footer>
-
-     <script src="scripts/hamburger.js"></script>
-     <script src="scripts/currentdate.js"></script>
-    <script src="scripts/windchill.js"></script>
- </body>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/windchill.js"></script>
+    </body>
 </html>

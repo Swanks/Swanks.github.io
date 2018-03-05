@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Gallary of Images | Snap Weather | Rob Swank | BYU-I</title>
+        <title>Snap Weather | Rob Swank | BYU-I</title>
 
         <meta name="author" content="Rob Swank">
 
@@ -25,8 +25,8 @@
     </head>
     <body>
 
-        <header>
-            <figure class="logo">
+        <header class="clearfix">
+               <figure class="logo">
                 <img src="images/snap-logo2.png" alt="The site logo" height="100">
             </figure>
 
@@ -39,58 +39,24 @@
         <nav>
             <button onclick="toggleNavMenu()">&#9776;</button>
             <ul id="primaryNav" class="hide">
-                <li><a href="franklin-8.html">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li><a href="franklin-8.html">Franklin</a></li>
                 <li><a href="#">Greenville</a></li>
                 <li><a href="#">Springfield</a></li>
                 <li><a href="stormcenter-8.html">Storm Center</a></li>
-                <li class="active"><a href="gallery-8.html">Gallery</a></li>
+                <li><a href="gallery-8.html">Gallery</a></li>
             </ul>
         </nav>
+        <!-- Main subject -->
 
-        <main>
-            <h2>Photo Gallery</h2>
-            <div class="pictureGallery">
+        <main class="clearfix" id="content">
+            <h2>  Storm Center - Report Submittion - Recieved</h2><br>
 
-                <figure>
-                    <img src="images/gallery/heavy-weather-400.jpg" alt="Heavy Weather - Snow Everywhere" >
-                    <figcaption>Brooding Weather</figcaption>
-                </figure>
-
-                <figure>
-                    <img src="images/gallery/noreaster-snow-400.jpg" alt="Cold Snow filled ranch site." >
-                    <figcaption>Noreaster</figcaption>
-                </figure>
-
-
-                <figure>
-                    <img src="images/gallery/snow-abandoned-house-400.jpg" alt="Snow with trees in the background and an abandoned house in the forground" >
-                    <figcaption>Bitter Cold Sanctuary</figcaption>
-                </figure>
-
-
-                <figure>
-                    <img src="images/gallery/snow-400.jpg" alt="Wintery Trees With Snow scene" >
-                    <figcaption>Winter Wonderland</figcaption>
-                </figure>
-
-
-                <figure>
-                    <img src="images/gallery/snow-streetlight-400.jpg" alt="Snowy scene with a street light at night." >
-                    <figcaption>Lighting The Cold Lonely Night</figcaption>
-                </figure>
-
-
-                <figure>
-                    <img src="images/gallery/winter-tree-lined-path-400.jpg" alt="A snowy tree lined path." >
-                    <figcaption>The Sentinels</figcaption>
-                </figure>
-
-            </div>
+            <h2>  Thanks for reporting on the weather in your area.</h2>
 
         </main>
-
-        <footer>
+        <!--  Footer  -->
+        <footer class="clearfix">
             <aside>
                 Snap Weather<br>
                 125 Industrial Drive<br>
@@ -99,7 +65,7 @@
                 snapweather@snap.com
             </aside>
 
-            <p class="footer-bar"> &copy; 2018 All Rights Reserved | Snap Weather | <span id="currentdate"></span></p>
+            <p>&copy;2018 All Rights Reserved | Snap Weather | <span id="currentdate"></span></p>
         </footer>
 
         <script src="scripts/hamburger.js"></script>
