@@ -12,8 +12,8 @@ var triCities = request.response;
 }
 function showData(jsonObj) {
     var citiesInfo = jsonObj['towns'];
-    for (var i = 0; i < citiesInfo.length; i++) {
 
+    for (var i = 0; i < citiesInfo.length; i++) {
         if (i === 2) { continue;}
         var myArticle = document.createElement('article');
         var myH2 = document.createElement('h2');

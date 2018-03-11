@@ -335,7 +335,14 @@ label #rating {
 input:focus {
     box-shadow: 1px 1px 6px rgba(0,0,0,0.9) inset;
 }
+/* ------------------------------- Home Page ------------------ */
 
+#triCities {
+    padding: 0 2%;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    border: none;
+}
 
     /* ------------------------------- Footer ------------------ */
 
