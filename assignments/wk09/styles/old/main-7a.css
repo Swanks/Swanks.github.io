@@ -1,0 +1,196 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+/* This wildcard applies to all elements ensuring a box layout model */
+/* --------------------------- Body -------------------------------- */
+    body {
+        font-size: 16px;
+        font-family: "Open Sans", sans;
+    /* Declare the base font-family - from google font api or other */
+    }
+
+    h1, h2, h3, h4, h5, h6 {  font-family: "Noto+Serif", san-slab, sans-serif; }
+
+    header, nav, main, footer {}
+        /* the comma means apply the following CSS declarations to all of the listed elements */
+        /* Declare the maximum width and other main element rules to limit the stretch on wide
+
+
+    /* --------------------------  Header ------------------------ */
+    header {
+        padding: .5rem 2%;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    header h1 {
+        color: #263BB2;
+        font-size: 2em;
+         margin: 2% 0 0 .5rem;
+    }
+
+    header figure.logo img {
+        margin: 0 0 .5rem -3%;
+        padding: 0 .8rem 0 .5rem;
+
+    }
+
+    header .subHeading {
+        color: #9CABFF;
+        font-size: 1.3em;
+        margin-left: .5rem;
+    }
+/* ------------------- Navigation Bar -------------------------------- */
+
+    nav button {
+        margin: .2rem 2%;
+        background-color: transparent;
+        border: none;
+        font-size: 1.6rem;
+        color: #fff;
+    }
+
+    nav {
+        background: #9bcc76; background: -moz-linear-gradient(top, #9bcc76 0%, #55ad0d 100%); background: -webkit-linear-gradient(top, #9bcc76 0%,#55ad0d 100%); background: linear-gradient(to bottom, #9bcc76 0%,#55ad0d 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bcc76', endColorstr='#55ad0d',GradientType=0 );
+        margin: 1% 4%;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li a {
+        display: flex;
+        flex-flow: row wrap;
+        padding: .8rem 2%;
+        text-decoration: none;
+        color: rgba(255,255,255,0.8);
+        border-top: 1px solid rgba(255,255,255,255.3);
+        font-size: 1.8rem;
+    }
+
+    nav ul li.active a {background-color: rgba(0,0,0,0.2); color: #ff9069;}
+
+    nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
+
+    nav ul.hide {display: none;}
+
+    /* -------------------------------- Main ----------------------------- */
+    main {}
+
+    main h2 {
+        color: #4F69FF;
+        font-size: 2em;
+        padding: .3rem 2%;
+    }
+
+    main figure.mainImg {
+        margin: 0 0 .2rem 1%;
+        width: 100%;
+    }
+
+    main figure.mainImg img {
+        max-height: 400px;
+        width: 98%;
+    }
+
+    main figure.mainImg figcaption {
+        text-align: center; font-size: .75rem;
+    }
+
+    /* ------------------------ Section ----------------------- */
+    section {
+        padding: .8rem 2%;
+        border: 5px solid #263BB2;
+        margin: .8rem 2%;
+    }
+
+    section #weatherSummary {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+         align-items: stretch;
+    }
+
+    h3 {
+        color: #9CABFF;
+        font-size: 1.5em;
+        margin: 0 0 3% 0;
+    }
+
+    .currentWeather {
+        display: flex;
+        font-size: 1.5em;
+        margin: .8rem;
+    }
+
+    .highLow, .currentConditions {
+        display: flex;
+        flex-flow: column;
+        font-size: 1.5em;
+        margin: 0 3% 0 0;
+    }
+
+    .weatherForecast { display: none;}
+
+    /* ---------------------------------------- Article ----------------------- */
+    article {
+        display: flex;
+        flex-flow: row wrap;
+        font-size: 1.3em;
+        line-height: 1.2em;
+        padding: .8rem 2%;
+        margin: 1.2rem 2%;
+    }
+
+    article p.town-article img {
+        /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+        display: flex;
+        color: #FF9069;
+        width: 100%;
+        padding: 0 0 2% 0;
+        margin: 1.2rem 2%;
+        /* fill the page in the small/phone view */
+    }
+
+    .strong1 { color: orangered; }
+
+    .strong2 { color: #263BB2; }
+
+    .strong3 { color: #67B22F; }
+
+    /*----------------------------- Picture Gallery ---------------*/
+    main.pictureGallery {}
+
+    div.pictureGallery {
+        padding: 0 2%;
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+    }
+
+    div.pictureGallery figure {margin: 1rem 0;}
+
+    div.pictureGallery figure img {width: 100%;}
+
+    div.pictureGallery figure figcaption {
+        text-align: left;
+        font-size: 1.2rem;
+        padding: 2% 1%;}
+
+    /* ---------------------------------- Footer ------------------ */
+
+    footer {
+        text-align: center;
+        padding: 1rem;
+        font-size: 1.3em;
+        color: white;
+        background-color: #9CABFF;
+    }
+
+    footer aside { }
+
+    footer > p { }
+
+    /* This structure refers to p elements that are direct children of the footer element */
+
+    /* Other Class Selectors */
