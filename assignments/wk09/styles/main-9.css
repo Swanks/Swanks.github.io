@@ -340,7 +340,7 @@ input:focus {
 #triCities {
     display: grid;
     grid-template-columns: repeat(1, 100%);
-    align-content: left;
+    text-align: left;
     padding: 2% 1%;
     border: none;
 }
