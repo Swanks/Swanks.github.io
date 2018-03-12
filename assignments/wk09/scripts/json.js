@@ -2,21 +2,21 @@ var section = document.querySelector('section');
 
 var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 var request = new XMLHttpRequest();
-request.open('GET', requestURL);
+request.open('GET', requestURL, true);
 request.responseType = 'json';
 request.send();
 
 request.onload = function() {
-var triCities = request.response;
-    showData(triCities);
+var townData = request.response;
+    showData(townData);
 }
 function showData(jsonObj) {
-    var citiesInfo = jsonObj['towns'];
+    var data = jsonObj['towns'];
 
-    for (var i = 0; i < citiesInfo.length; i++) {
+    for (var i = 0; i < data.length; i++) {
         if (i === 2) { continue;}
         var myArticle = document.createElement('article');
-        var myH2 = document.createElement('h2');
+        var myH3 = document.createElement('h3');
         var myPara1 = document.createElement('p');
         var myPara2 = document.createElement('p');
         var myPara3 = document.createElement('p');
@@ -24,21 +24,22 @@ function showData(jsonObj) {
         var myPara5 = document.createElement('p');
         var myList = document.createElement('ul');
 
-        myH2.textContent = cityInfo[i].name;
-        myPara1.textContent = 'City Motto: ' + citiesInfo[i].motto;
-        myPara2.textContent = 'City Founded: ' + citiesInfo[i].yearFounded;
-        myPara3.textContent = 'Current Population: ' + citiesInfo[i].currentPopulation;
-        myPara4.textContent = 'Average Rainfall: ' + citiesInfo[i].averageRainfall;
-        myPara5.textContent = 'Current Events: ';
+        myH3.textContent = data[i].name;
+        myPara1.textContent = 'Motto: ' + data[i].motto;
+        myPara2.textContent = 'City Founded:  ' + data[i].yearFounded;
+        myPara3.textContent = 'Population: ' + data[i].currentPopulation;
+        myPara4.textContent = 'Avg. Rainfall:  ' + data[i].averageRainfall;
+        myPara5.textContent = 'Upcoming Events: ';
 
-        var citiesEvents = citiesInfo[i].events;
-        for (var j = 0; j < citiesEvents.length; j++) {
+        var townEvents = data[i].events;
+        for (var j = 0; j < townEvents.length; j++) {
+            if (j > 2) { continue;}
             var listItem = document.createElement('li');
-            listItem.textContent = citiesEvents[j];
+            listItem.textContent = townEvents[j];
             myList.appendChild(listItem);
         }
 
-        myArticle.appendChild(myH2);
+        myArticle.appendChild(myH3);
         myArticle.appendChild(myPara1);
         myArticle.appendChild(myPara2);
         myArticle.appendChild(myPara3);

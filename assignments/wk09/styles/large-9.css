@@ -32,4 +32,22 @@
     div.pictureGallery figure:hover {
         box-shadow: 3px 3px 6px rgba(0,0,0,0.4);
     }
+    /* ------------------------------- Home Page ------------------ */
+
+    #triCities p {
+        color: #263BB2;
+        font-size: 1.6vw;
+        padding: 2%;
+        margin: 3% 5%;
+    }
+
+    #triCities ul {
+        color: #55ad0d;
+        font-size: 1.4vw;
+        padding: 3% 2%;
+        margin: 2% 2%;
+        list-style-type:square;
+    }
+
+
 }

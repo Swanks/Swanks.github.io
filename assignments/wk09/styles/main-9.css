@@ -338,10 +338,31 @@ input:focus {
 /* ------------------------------- Home Page ------------------ */
 
 #triCities {
-    padding: 0 2%;
     display: grid;
-    grid-template-columns: repeat(3, 33%);
+    grid-template-columns: repeat(1, 100%);
+    align-content: center
+    padding: 0 3%;
     border: none;
+}
+
+#triCities h3 {
+    color: #55ad0d;
+    font-size: 4vw;
+    margin: 4% 20%;
+}
+
+#triCities p {
+    color: #263BB2;
+    font-size: 1.8vw;
+    margin: 3% 10%;
+}
+
+#triCities ul {
+    color: #55ad0d;
+    font-size: 1.6vw;
+    margin: 2% 0;
+    padding: 2%;
+    list-style-type:square;
 }
 
     /* ------------------------------- Footer ------------------ */
