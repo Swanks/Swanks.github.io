@@ -37,13 +37,15 @@
     #triCities p {
         color: #263BB2;
         font-size: 1.6vw;
-        padding: 1% 5%;
-        margin: 1% 2%;
+        font-weight: 600;
+        padding: 2% 2%;
+        margin: 1% 5%;
     }
 
     #triCities ul li{
         color: #55ad0d;
         font-size: 1.5vw;
+        font-weight: 600;
         padding: 1% 6%;
         margin: 1% 1%;
         list-style-type:square;
