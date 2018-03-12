@@ -40,13 +40,32 @@
     }
 
     /* ------------------------------- Home Page ------------------ */
+    #triCities h3 {
+        color: #55ad0d;
+        font-size: 4vw;
+        margin: 4% 10%;
+    }
 
     #triCities {
         display: grid;
         grid-template-columns: repeat(3, 33%);
         align-content: center
-            padding: 0 3%;
+        padding: 1% 2%;
         border: none;
+    }
+
+    #triCities p {
+        color: #263BB2;
+        font-size: 2.2vw;
+        margin: 6% 10%;
+    }
+
+    #triCities ul li{
+        color: #55ad0d;
+        font-size: 1.9vw;
+        padding: .5% 2%;
+        margin: 3% 1%;
+        list-style-type:square;
     }
 
 }

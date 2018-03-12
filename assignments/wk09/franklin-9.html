@@ -49,7 +49,7 @@
         </nav>
 
         <main>
-            <h2>The City of Franklin</h2>
+            <h2>The City of Franklin, MN</h2>
             <figure class="mainImg">
                 <img src="images/franklin-city-optimized-01a.jpg" alt="A country day at Franklin city" sizes="100vw"
                      srcset="images/franklin-city-500.jpg 500w,
@@ -60,21 +60,24 @@
 
             <section id="weatherSummary">
                 <h3>Weather Summary</h3>
+                <p>Current Temperature:  <span id="tempF" >50</span>&deg;F</p>
                 <div class="highlow">
-                    <p>High: 58&#176; F</p>
-                    <p>Low: 33&#176; F</p>
+                    <p>High: <span id="high">55</span>&#176; F</p>
+                    <p>Low: <span id="low">25</span>&#176; F</p>
                 </div>
                 <div class="currentWeather">
-                    Sunny
+                    <p>Current Conditions: <span id="cConditions">Sunny</span></p>
                     <picture>
-                        <img src="images/sunny.png" alt="Yellow Sun drawing" height="60">
+                        <img id="weatherIcon" src="images/sunny.png" alt="Weather Icon" height="50">
                     </picture>
                 </div>
                 <div class="currentConditions">
-                    <p>Precipitation: 0 &#037;</p>
-                    <p>Humidity: 91 &#037;</p>
-                    <p>Wind Speed: 9 mph</p>
-                    <p>Windchill: <span id="windChill"></span>&#176; F</p>
+                    <p>Precipitation: <span id="percip">5</span> inches</p>
+                    <p>Humidity: <span id="humidity">50</span></p>
+                    <p>Wind Speed: <span id="wSpeed">5</span> mph</p>
+                    <p>Windchill: <span id="windChill">45</span>&#176; F</p>
+
+                    <p> Weather Forecast: <span id="wForecast"></span></p>
                 </div>
             </section>
 
@@ -156,6 +159,7 @@
 
      <script src="scripts/hamburger.js"></script>
      <script src="scripts/currentdate.js"></script>
-    <script src="scripts/windchill.js"></script>
+     <script src="scripts/windchill.js"></script>
+     <script src="scripts/weather.js"></script>
  </body>
 </html>

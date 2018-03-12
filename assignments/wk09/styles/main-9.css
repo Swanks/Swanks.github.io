@@ -340,28 +340,30 @@ input:focus {
 #triCities {
     display: grid;
     grid-template-columns: repeat(1, 100%);
-    align-content: center
-    padding: 0 3%;
+    align-content: left;
+    padding: 2% 1%;
     border: none;
 }
 
 #triCities h3 {
     color: #55ad0d;
-    font-size: 4vw;
-    margin: 4% 20%;
+    font-size: 7vw;
+    margin: 2% 6%;
 }
 
 #triCities p {
     color: #263BB2;
-    font-size: 1.8vw;
-    margin: 3% 10%;
+    font-size: 3.2vw;
+    font-weight: 600;
+    margin: 2% 10%;
 }
 
-#triCities ul {
+#triCities ul li {
     color: #55ad0d;
-    font-size: 1.6vw;
-    margin: 2% 0;
-    padding: 2%;
+    font-size: 2.8vw;
+    font-weight: 600;
+    padding: 2% 1%;
+    margin: 1% 2%;
     list-style-type:square;
 }
 
