@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Snap Weather | Rob Swank | BYU-I</title>
+
+        <meta name="author" content="Rob Swank">
+
+        <meta name="description" content="BYU-I CIT-230:09, Rob Swank, Create a fake weather site project">
+
+        <!-- external style references in the proper cascading order -->
+        <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cantata+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+
+        <!-- Google API font reference -->
+        <link href="styles/normalize.css" rel="stylesheet">
+
+        <!-- normalize useragent/browser defaults -->
+        <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views -->
+    </head>
+    <body>
+
+        <header class="clearfix">
+               <figure class="logo">
+                <img src="images/snap-logo2.png" alt="The site logo" height="100">
+            </figure>
+
+            <h1>Snap Weather</h1>
+            <div class="subHeading">Weather Coming Your Way - Life's a Snap</div>
+        </header>
+
+        <!-- site navigation use placeholder references -->
+
+        <nav>
+            <button onclick="toggleNavMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="franklin.html">Franklin</a></li>
+                <li><a href="greenville.html">Greenville</a></li>
+                <li><a href="springfield.html">Springfield</a></li>
+                <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <!-- Main subject -->
+
+        <main class="clearfix" id="content">
+            <h2>Storm Center - Storm Reports</h2>
+            <h2> Community Weather Reporting as it Happens</h2>
+
+            <!--  form  -->
+            <form action="thankyou.html" method="get" enctype="multipart/form-data" name="storm">
+                <!-- User contact info -->
+                <fieldset>
+                    <legend><span>Report Contact Information</span></legend>
+                    <label><span>Full Name:</span><input name="name" type="text" placeholder="Full Name" pattern="[a-zA-Z -._]{5,99}" required></label>
+                    <label><span>Email Address:</span><input name="email" type="email" placeholder="my.email@address.com"></label>
+                    <label><span>Phone Number:</span><input name="phone" type="tel" pattern="[0-9]{7,20}" placeholder="15131112222" required></label>
+                    <label><span> Zip Code:</span> <input name="zipcode" type="number" placeholder="Zip Code" required></label>
+                </fieldset>
+
+                <!-- Weather Report info -->
+                <fieldset>
+                    <legend><span>Storm Reporting Information</span></legend>
+                    <label><span>Storm Date:  </span><input name="date" type="date"></label>
+                    <label>
+                        <span>Storm Type:</span>
+                        <input type="text" name="storm" list="stormtype" placeholder="Please select...">
+                        <datalist id="stormtype">
+                            <option value="Blizzard"></option>
+                            <option value="Flash Flood"></option>
+                            <option value="Hail"></option>
+                            <option value="Heavy Rain"></option>
+                            <option value="Hurricane"></option>
+                            <option value="Snow"></option>
+                            <option value="Strong Winds"></option>
+                            <option value="Thunderstorm"></option>
+                            <option value="Tornado"></option>
+                        </datalist>
+                    </label>
+
+                <!-- Storm Severity rating -->
+                    <label><span>Severity of Storm - Rated (1 to 10):</span>
+                        1 <input type="range" id="rating" value="0" min="1" max="10" step="1" > 10
+                    </label>
+
+                    <!-- Where the storm is happening -->
+                    <label><span>Region of Storm</span>
+                        <select>
+                            <option label="Select Region..." selected disabled>Select Region</option>
+                            <option label="Franklin">Franklin</option>
+                            <option label="Greenville">Greenville</option>
+                            <option label="Springfield">SpringField</option>
+                        </select>
+                    </label>
+                </fieldset>
+
+                    <!-- Saftey rating -->
+                <fieldset>
+                    <legend><span>How Are You Doing - Can you Provide More Weather or Saftey Details</span></legend>
+                        <label><span>Are You In Danger: </span></label>
+
+                    <label class="dangerdanger"><span class="danger">No</span>
+                        <input name="radio" type="radio" value="no" checked="checked"><span class="checker"></span>
+                    </label>
+
+                    <label class="dangerdanger"><span class="danger">Maybe</span>
+                        <input name="radio" type="radio" value="maybe"><span class="checker"></span>
+                    </label>
+
+                    <label class="dangerdanger"><span class="danger">Yes</span>
+                        <input name="radio" type="radio" value="yes"> <span class="checker"></span>
+                    </label><br><br>
+
+                    <!-- Additional info -->
+
+                    <label><span>Additional information: </span>
+                        <textarea name="addedinfo" placeholder="Enter text  here..." rows="6" cols="70"></textarea>
+                    </label><br>
+
+                    <input type="submit" value="Submit Your Weather" class="submit">
+                </fieldset>
+            </form>
+        </main>
+        <!--  Footer  -->
+        <footer class="clearfix">
+            <aside>
+                Snap Weather<br>
+                125 Industrial Drive<br>
+                Franklin, OH 45005<br>
+                513-654-1234<br>
+                snapweather@snap.com
+            </aside>
+
+            <p>&copy;2018 All Rights Reserved | Snap Weather | <span id="currentdate"></span></p>
+        </footer>
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/windchill.js"></script>
+        <script src="scripts/json.js"></script>
+    </body>
+</html>
