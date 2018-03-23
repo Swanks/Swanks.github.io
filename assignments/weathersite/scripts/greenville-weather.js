@@ -59,13 +59,7 @@ greenville10DayObject.onload = function(){
     var greenville10Day = JSON.parse(greenville10DayObject.responseText);
     console.log(greenville10Day);
 
-    // Seventh day.
-    document.getElementById('iconDay6').src = greenville10Day.forecast.simpleforecast.forecastday[6].icon_url;
-    document.getElementById('highDay6').innerHTML = greenville10Day.forecast.simpleforecast.forecastday[6].high.fahrenheit;
-    document.getElementById('lowDay6').innerHTML = greenville10Day.forecast.simpleforecast.forecastday[6].low.fahrenheit;
-
-
-    // First day.
+     // First day.
     document.getElementById('iconDay0').src = greenville10Day.forecast.simpleforecast.forecastday[0].icon_url;
     document.getElementById('highDay0').innerHTML = greenville10Day.forecast.simpleforecast.forecastday[0].high.fahrenheit;
     document.getElementById('lowDay0').innerHTML = greenville10Day.forecast.simpleforecast.forecastday[0].low.fahrenheit;
@@ -94,6 +88,11 @@ greenville10DayObject.onload = function(){
     document.getElementById('iconDay5').src = greenville10Day.forecast.simpleforecast.forecastday[5].icon_url;
     document.getElementById('highDay5').innerHTML = greenville10Day.forecast.simpleforecast.forecastday[5].high.fahrenheit;
     document.getElementById('lowDay5').innerHTML = greenville10Day.forecast.simpleforecast.forecastday[5].low.fahrenheit;
+
+    // Seventh day.
+    document.getElementById('iconDay6').src = greenville10Day.forecast.simpleforecast.forecastday[6].icon_url;
+    document.getElementById('highDay6').innerHTML = greenville10Day.forecast.simpleforecast.forecastday[6].high.fahrenheit;
+    document.getElementById('lowDay6').innerHTML = greenville10Day.forecast.simpleforecast.forecastday[6].low.fahrenheit;
 
     // Eigth day.
     document.getElementById('iconDay7').src = greenville10Day.forecast.simpleforecast.forecastday[7].icon_url;
