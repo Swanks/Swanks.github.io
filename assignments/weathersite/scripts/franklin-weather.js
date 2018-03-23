@@ -51,7 +51,7 @@ franklinForecastObject.onload = function(){
 
     var franklin10DayObject = new XMLHttpRequest();
 
-    franklin10DayObject.open('GET', '//api.wunderground.com/api/520b598acf559695/forecast/q/MN/Franklin.json', true);
+franklin10DayObject.open('GET', '//api.wunderground.com/api/520b598acf559695/forecast10day/q/MN/Franklin.json', true);
 
     franklin10DayObject.send();
 

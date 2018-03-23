@@ -51,7 +51,7 @@ springfieldForecastObject.onload = function(){
 
 var springfield10DayObject = new XMLHttpRequest();
 
-springfield10DayObject.open('GET', '//api.wunderground.com/api/520b598acf559695/forecast/q/OR/Springfield.json', true);
+springfield10DayObject.open('GET', '//api.wunderground.com/api/520b598acf559695/forecast10day/q/OR/Springfield.json', true);
 
 springfield10DayObject.send();
 

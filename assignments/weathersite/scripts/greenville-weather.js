@@ -51,7 +51,7 @@ greenvilleForecastObject.onload = function(){
 
 var greenville10DayObject = new XMLHttpRequest();
 
-greenville10DayObject.open('GET', '//api.wunderground.com/api/520b598acf559695/forecast/q/TX/Greenville.json', true);
+greenville10DayObject.open('GET', '//api.wunderground.com/api/520b598acf559695/forecast10day/q/TX/Greenville.json', true);
 
 greenville10DayObject.send();
 
