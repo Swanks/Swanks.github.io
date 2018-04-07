@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en-us">
-    <head>
+    <head >
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -8,16 +8,23 @@
 
         <meta name="author" content="Rob Swank">
 
-        <meta name="description" content="BYU-I CIT-230:09, Rob Swank, Create a fake weather site project">
+        <meta name="description" content="BYU-I CIT-230:09, Rob Swank, final project - Create a fake bike shop in Bozeman Montana">
 
         <!-- external style references in the proper cascading order -->
-        <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Cantata+One" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Allerta" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cantata+One|Noto+Serif" rel="stylesheet">
+        <!-- Google API font references -->
 
-        <!-- Google API font reference -->
+        <!-- favicon links -->
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="images/favicon/site.webmanifest">
+        <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#ea2309">
         <link href="styles/normalize.css" rel="stylesheet">
 
+        <link href="styles/normalize.css" rel="stylesheet">
         <!-- normalize useragent/browser defaults -->
         <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
         <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
@@ -25,13 +32,13 @@
     </head>
     <body>
 
-        <header>
-               <figure class="logo">
-                <img src="images/snap-logo2.png" alt="The site logo" height="100">
+        <header class="clearfix">
+            <figure class="logo">
+                <img src="images/logo/The-mountain-spoke-logo-blue-right.png" alt="The site logo" height="100">
             </figure>
 
-            <h1>Snap Weather</h1>
-            <div class="subHeading">Weather Coming Your Way - Life's a Snap</div>
+            <h1>The Mountain Spoke</h1>
+            <div class="subHeading">Bozeman’s  Key to Mountain Adventures</div>
         </header>
 
         <!-- site navigation use placeholder references -->
@@ -40,22 +47,22 @@
             <button onclick="toggleNavMenu()">&#9776;</button>
             <ul id="primaryNav" class="hide mainmenu">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="franklin.html">Franklin</a></li>
-                <li><a href="greenville.html">Greenville</a></li>
-                <li><a href="springfield.html">Springfield</a></li>
-                <li><a href="stormcenter.html">Storm Center</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="adventures.html">Adventures</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
 
         <main>
-            <h2>The City of Franklin, MN</h2>
+            <h2>Adventures</h2>
             <figure class="mainImg">
-                <img src="images/franklin-city-optimized-01a.jpg" alt="A country day at Franklin city" sizes="100vw"
-                     srcset="images/franklin-city-500.jpg 500w,
-                     images/franklin-city-800.jpg 800w,
-                     images/franklin-city-1100.jpg 1100w">
-                <figcaption>Franklin City</figcaption>
+                <img src="images/unbelievable-1696447_1100.jpg" alt=" Watching A Spectacular Sunset" sizes="100vw"
+                     srcset="images/unbelievable-1696447_500.jpg 500w,
+                             images/unbelievable-1696447_800.jpg 800w,
+                             images/unbelievable-1696447_1100.jpg 1100w">
+                <figcaption>Oustaning Sunsets</figcaption>
             </figure>
 
             <section id="weatherSummary">
@@ -83,7 +90,7 @@
 
             <section class="weatherForecast">
                 <h3>10 Day Forecast</h3>
-                <table class="clearfix">
+                <table>
                     <thead>
                         <tr>
                             <th>Day 1</th>
@@ -104,71 +111,56 @@
                             <td><img src="images/sunny-50.png" alt="Weather Day 2" id = "iconDay1"><br> High <span id="highDay1"> </span>  &#176;F<br><br>Low <span id="lowDay1"> </span> &#176;F</td>
                             <td><img src="images/sunny-50.png" alt="Weather Day 3" id = "iconDay2"><br> High <span id="highDay2"> </span>  &#176;F<br><br>Low <span id="lowDay2"> </span> &#176;F</td>
                             <td><img src="images/sunny-50.png" alt="Weather Day 4" id = "iconDay3"><br> High <span id="highDay3"> </span>  &#176;F<br><br>Low <span id="lowDay3"> </span> &#176;F</td>
-
                             <td><img src="images/sunny-50.png" alt="Weather Day 5" id = "iconDay4"><br> High <span id="highDay4"> </span>  &#176;F<br><br>Low <span id="lowDay4"> </span> &#176;F</td>
-
                             <td><img src="images/sunny-50.png" alt="Weather Day 6" id = "iconDay5"><br> High <span id="highDay5"> </span>  &#176;F<br><br>Low <span id="lowDay5"> </span> &#176;F</td>
                             <td><img src="images/sunny-50.png" alt="Weather Day 7" id = "iconDay6"><br> High <span id="highDay6"> </span>  &#176;F<br><br>Low <span id="lowDay6"> </span> &#176;F</td>
                             <td><img src="images/sunny-50.png" alt="Weather Day 8" id = "iconDay7"><br> High <span id="highDay7"> </span>  &#176;F<br><br>Low <span id="lowDay7"> </span> &#176;F</td>
                             <td><img src="images/sunny-50.png" alt="Weather Day 9" id = "iconDay8"><br> High <span id="highDay8"> </span>  &#176;F<br><br>Low <span id="lowDay8"> </span> &#176;F</td>
-                            <td><img src="images/sunny-50.png" alt="Weather Day 10" id = "iconDay9"><br> High <span id="highDay9"> </span>  &#176;F<br><br>Low <span id="lowDay9"> </span> &#176;F</td>
+                            <td><img src="images/sunny-50.png" alt="Weather Day10" id = "iconDay9"><br> High <span id="highDay9"> </span>  &#176;F<br><br>Low <span id="lowDay9"> </span> &#176;F</td>
                         </tr>
                     </tbody>
                 </table>
             </section>
 
             <article>
-                <h2>Snow Emergency Levels</h2>
+                <h2>Visit our Historic Castle</h2>
                 <p class="town-article">
 
                     <picture>
-                         <img src="images/orig-snowy-road-pexels-photo-760971.jpg" alt="Car path through a snowy country road." sizes="50vw"
-                             srcset="images/500-snowy-road-pexels-photo-760971.jpg 500w,
-                             images/800-snowy-road-pexels-photo-760971.jpg 800w,
-                             images/1100-snowy-road-pexels-photo-760971.jpg 1100w" >
+                        <img src="images/springfield-castle-image-1100.jpg" alt="Historic 100 Year Old Castle" sizes="50vw"
+                             srcset="images/springfield-castle-image-500.jpg 500w,
+                             images/springfield-castle-image-800.jpg 800w,
+                             images/springfield-castle-image-1100.jpg 1100w" >
                     </picture>
 
-                    Due to recent heavy weather fluxuations we are being asked to review the weather emergency levels by our local authorities.  "Pursuant of Attorney General opinion 86-023, the Sheriff of a County may declare a Snow Emergency and temporarily close County and Township Roads within his jurisdiction for the preservation of the public peace. Attorney General opinion 97-015 allows the Sheriff to close State and Municipal Roads."<br>
-
-                    <br><strong class="strong1">Snow emergencies have been issued for the following counties:</strong><br><br>
-
-                    <strong class="strong2">No snow emergencies are in effect</strong><br><br>
-
-                    <strong class="strong3">What the levels mean to you</strong><br><br>
-
-                    <strong>Level 1 Snow Emergency:</strong> Roadways are hazardous with blowing and drifting snow. Roads are also icy; drive carefully.<br><br>
-
-                    <strong>Level 2 Snow Emergency:</strong> Roadways are hazardous with blowing and drifting snow. Only those who believe it is necessary to drive should be out on the roadways. Contact your employer to see if you should report to work.<br><br>
-
-                    <strong>Level 3 Snow Emergency:</strong> All roadways are closed to non-emergency personnel. No one else should be out during these conditions unless it is absolutely necessary to travel. All employees should contact their employers to see if they should report to work. Those traveling on the roadways may be subject to arrest.<br><br>
+                    The Springfield with various historical oportunities, including our 100 year old castle.  The museum is an educational institution authorized by the City of Springfield, Oregon to acquire, preserve, and interpret materials that illustrate the history and development of the City of Springfield, the surrounding rural areas of East Lane County, and the state of Oregon. We feature rotating art and historical exhibits, permanent exhibit displays, and provide additional educational programming for our community throughout the year. As one of Lane County’s FREE museums, our exhibits and programming provide an outstanding value for our community<br><br>
                 </p>
 
             </article>
 
     </main>
 
-    <footer>
-        <aside>
-            Snap Weather<br>
-            125 Industrial Drive<br>
-            Franklin, OH 45005<br>
-            513-654-1234<br>
-            snapweather@snap.com
-        </aside>
+        <footer class="clearfix">
+            <aside>
+                The Mountain Spoke - Bike Shop<br>
+                256 SE Rouse Ave, <br>
+                Bozeman, MT 59719 <br>
+                406-592-5533 <br>
+                mountainspoke@tms.com
+            </aside>
 
-        <div><br>
-            <a class="socialmedia" target="_blank" href="https://www.facebook.com/"><img class="icon" src="images/facebook.png" alt="facebook"></a>
-            <a class="socialmedia" target="_blank" href="https://www.instagram.com/"><img class="icon" src="images/instagram.png" alt="instagram"></a>
-            <a class="socialmedia" target="_blank" href="https://www.youtube.com/"><img class="icon" src="images/youtube.png" alt="youtube"></a>
-        </div>
+            <div><br>
+                <a class="socialmedia" target="_blank" href="https://www.facebook.com/"><img class="icon" src="images/facebook.png" alt="facebook"></a>
+                <a class="socialmedia" target="_blank" href="https://www.instagram.com/"><img class="icon" src="images/instagram.png" alt="instagram"></a>
+                <a class="socialmedia" target="_blank" href="https://www.youtube.com/"><img class="icon" src="images/youtube.png" alt="youtube"></a>
+            </div>
 
-         <p>&copy;2018 All Rights Reserved | Snap Weather | <span id="currentdate"></span></p>
-    </footer>
+            <p>&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate"></span></p>
+        </footer>
+
 
      <script src="scripts/hamburger.js"></script>
      <script src="scripts/currentdate.js"></script>
-     <script src="scripts/windchill.js"></script>
-     <script src="scripts/franklin-weather.js"></script>
-    <script src="scripts/mainmenu.js"></script>
+     <script src="scripts/mainmenu.js"></script>
  </body>
 </html>

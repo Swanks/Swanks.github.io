@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Snap Weather | Rob Swank | BYU-I</title>
+
+        <meta name="author" content="Rob Swank">
+
+        <meta name="description" content="BYU-I CIT-230:09, Rob Swank, final project - Create a fake bike shop in Bozeman Montana">
+
+        <!-- external style references in the proper cascading order -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Allerta" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cantata+One|Noto+Serif" rel="stylesheet">
+        <!-- Google API font references -->
+
+        <!-- favicon links -->
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="images/favicon/site.webmanifest">
+        <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#ea2309">
+        <link href="styles/normalize.css" rel="stylesheet">
+
+        <link href="styles/normalize.css" rel="stylesheet">
+        <!-- normalize useragent/browser defaults -->
+        <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views -->
+    </head>
+    <body>
+
+        <header class="clearfix">
+            <figure class="logo">
+                <img src="images/logo/The-mountain-spoke-logo-blue-right.png" alt="The site logo" height="100">
+            </figure>
+
+            <h1>The Mountain Spoke</h1>
+            <div class="subHeading">Bozeman’s  Key to Mountain Adventures</div>
+        </header>
+
+        <!-- site navigation use placeholder references -->
+
+        <nav>
+            <button onclick="toggleNavMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide mainmenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="service.html">Service</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="adventures.html">Adventures</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>The Mountain Spoke - Cycle Shop</h2>
+            <figure class="mainImg">
+                <img src="images/pexels-photo-691668_1100.jpg" alt="The Mountains Peak out of the Mist" sizes="100vw"
+                     srcset="pexels-photo-691668_500.jpg 500w, images/pexels-photo-691668_800.jpg 800w,
+                             images/pexels-photo-691668_1100.jpg 1100w">
+                <figcaption> The view of Majisty above the Clouds</figcaption>
+            </figure>
+
+
+        <main class="clearfix" id="content">
+            <h2>  Thanks!
+        . </h2><br>
+
+            <h2>  We appriciate your filling out the form.</h2>
+
+        </main>
+        <!--  Footer  -->
+        <footer class="clearfix">
+            <aside>
+              The Mountain Spoke - Bike Shop<br>
+              256 SE Rouse Ave, <br>
+              Bozeman, MT 59719 <br>
+              406-592-5533 <br>
+              mountainspoke@tms.com
+             </aside>
+
+            <div><br>
+                <a class="socialmedia" target="_blank" href="https://www.facebook.com/"><img class="icon" src="images/facebook.png" alt="facebook"></a>
+                <a class="socialmedia" target="_blank" href="https://www.instagram.com/"><img class="icon" src="images/instagram.png" alt="instagram"></a>
+                <a class="socialmedia" target="_blank" href="https://www.youtube.com/"><img class="icon" src="images/youtube.png" alt="youtube"></a>
+            </div>
+
+             <p>&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate"></span></p>
+         </footer>
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/mainmenu.js"></script>
+    </body>
+</html>
