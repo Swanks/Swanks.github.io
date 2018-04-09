@@ -34,7 +34,7 @@
 
         <header class="clearfix">
             <figure class="logo">
-                <img src="images/logo/The-mountain-spoke-logo-blue-right.png" alt="The site logo" height="100">
+                <img src="images/logo/The-mountain-spoke-logo-blue-left.png" alt="The site logo" height="100">
             </figure>
 
             <h1>The Mountain Spoke</h1>
@@ -43,7 +43,7 @@
 
         <!-- site navigation use placeholder references -->
 
-        <nav>
+        <nav class="clearfix">
             <button onclick="toggleNavMenu()">&#9776;</button>
             <ul id="primaryNav" class="hide mainmenu">
                 <li><a href="index.html">Home</a></li>
@@ -55,112 +55,88 @@
             </ul>
         </nav>
 
-        <main>
-            <h2>Service</h2>
+        <main class="clearfix">
+
             <figure class="mainImg">
-                <img src="images/mtb-810357_1200.jpg.jpg" alt="A country day at Franklin city" sizes="100vw"
-                     srcset="images/mtb-810357_500.jpg 500w,
-                             images/mtb-810357_800.jpg 800w,
-                             images/mtb-810357_1200.jpg 1100w">
+                <img src="images/bikeshop-1200.jpg" alt="A country day at Franklin city" sizes="100vw"
+                     srcset="images/bikeshop-500.jpg 500w,
+                             images/bikeshop-800.jpg 800w,
+                             images/bikeshop-1200.jpg 1100w">
                 <figcaption>Giving your Ride a Ride</figcaption>
             </figure>
+            <h2>Bike Service</h2>
+            <h3>Keep Your Bike in Top Shape with The Mountain Spoke Service Shop</h3>
 
-            <section id="weatherSummary">
-                <h3>Weather Summary</h3>
-                <p>Current Temperature:  <span id="tempF" >50</span>&deg;F</p>
-                <div class="highlow">
-                    <p>High: <span id="high">55</span>&#176; F</p>
-                    <p>Low: <span id="low">25</span>&#176; F</p>
-                </div>
-                <div class="currentWeather">
-                    <p>Current Conditions: <span id="cConditions">Sunny</span></p>
-                    <picture>
-                        <img id="weatherIcon" src="images/sunny.png" alt="Weather Icon" height="50">
-                    </picture>
-                </div>
-                <div class="currentConditions">
-                    <p>Precipitation: <span id="percip">5</span> inches</p>
-                    <p>Humidity: <span id="humidity">50</span></p>
-                    <p>Wind Speed: <span id="wSpeed">5</span> mph</p>
-                    <p>Windchill: <span id="windChill">45</span>&#176; F</p>
+            <aside class="service">
+                <p>Is your bike running a little sluggish?  For any maintenance needs from a complete suspenion overhaul to a simple gear adjustment, The Mountain Spoke service center has  experienced and certified mechanics can address any issue at reasonable rates.</p>
 
-                    <p> Weather Forecast: <span id="wForecast"></span></p>
-                </div>
-            </section>
+                <p>The Mountain Spoke service center offers from minor adjustments to complete overhauls at reasonable prices. Regular maintenance is important for your bike.  To mazimize your bikes performance, we can replace the old parts or upgrade your entire set-up.</p>
+            </aside><br>
 
-            <section class="weatherForecast">
-                <h3>10 Day Forecast</h3>
-                <table class="clearfix">
-                    <thead>
-                        <tr>
-                            <th>Day 1</th>
-                            <th>Day 2</th>
-                            <th>Day 3</th>
-                            <th>Day 4</th>
-                            <th>Day 5</th>
-                            <th>Day 6</th>
-                            <th>Day 7</th>
-                            <th>Day 8</th>
-                            <th>Day 9</th>
-                            <th>Day 10</th>
-                        </tr>
-                    </thead>
+
+            <div>
+                  <table>
                     <tbody>
                         <tr>
-                            <td><img src="images/sunny-50.png" alt="Weather Day 1" id = "iconDay0"><br> High <span id="highDay0"> </span>  &#176;F<br><br>Low <span id="lowDay0"> </span> &#176;F</td>
-                            <td><img src="images/sunny-50.png" alt="Weather Day 2" id = "iconDay1"><br> High <span id="highDay1"> </span>  &#176;F<br><br>Low <span id="lowDay1"> </span> &#176;F</td>
-                            <td><img src="images/sunny-50.png" alt="Weather Day 3" id = "iconDay2"><br> High <span id="highDay2"> </span>  &#176;F<br><br>Low <span id="lowDay2"> </span> &#176;F</td>
-                            <td><img src="images/sunny-50.png" alt="Weather Day 4" id = "iconDay3"><br> High <span id="highDay3"> </span>  &#176;F<br><br>Low <span id="lowDay3"> </span> &#176;F</td>
-
-                            <td><img src="images/sunny-50.png" alt="Weather Day 5" id = "iconDay4"><br> High <span id="highDay4"> </span>  &#176;F<br><br>Low <span id="lowDay4"> </span> &#176;F</td>
-
-                            <td><img src="images/sunny-50.png" alt="Weather Day 6" id = "iconDay5"><br> High <span id="highDay5"> </span>  &#176;F<br><br>Low <span id="lowDay5"> </span> &#176;F</td>
-                            <td><img src="images/sunny-50.png" alt="Weather Day 7" id = "iconDay6"><br> High <span id="highDay6"> </span>  &#176;F<br><br>Low <span id="lowDay6"> </span> &#176;F</td>
-                            <td><img src="images/sunny-50.png" alt="Weather Day 8" id = "iconDay7"><br> High <span id="highDay7"> </span>  &#176;F<br><br>Low <span id="lowDay7"> </span> &#176;F</td>
-                            <td><img src="images/sunny-50.png" alt="Weather Day 9" id = "iconDay8"><br> High <span id="highDay8"> </span>  &#176;F<br><br>Low <span id="lowDay8"> </span> &#176;F</td>
-                            <td><img src="images/sunny-50.png" alt="Weather Day 10" id = "iconDay9"><br> High <span id="highDay9"> </span>  &#176;F<br><br>Low <span id="lowDay9"> </span> &#176;F</td>
+                            <td colspan="2"><br /><Strong>Service Prices</Strong><br></td>
                         </tr>
-                    </tbody>
+                        <tr>
+                            <td>Bike Tune UP</td>
+                            <td>$45.00</td>
+                        </tr>
+                        <tr>
+                            <td>Department Store Bike Tune</td>
+                            <td>$75.00</td>
+                        </tr>
+                        <tr>
+                            <td>Flat Tire Change</td>
+                            <td>$12.00 + Tube</td>
+                        </tr>
+                        <tr>
+                            <td>Brake Bleed</td>
+                            <td>$23.00</td>
+                        </tr>
+                        <tr>
+                            <td>Bike Build</td>
+                            <td>$65.00</td>
+                        </tr>
+                        <tr>
+                            <td>Fork Seals Replaced</td>
+                            <td>$35.00 + Seals</td>
+                        </tr>
+                        <tr>
+                            <td>Wheel Build</td>
+                            <td>$65.00 &amp; up + Parts</td>
+                        </tr>
+                        <tr>
+                            <td>Wheel True</td>
+                            <td>$27.00 &amp; up</td>
+                        </tr>
+                        <tr>
+                            <td>Minimum Labour Charge: </td>
+                            <td> $25.00</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Estimates Available</td>
+                        </tr>
+                     </tbody>
                 </table>
-            </section>
-
-            <article>
-                <h2>Snow Emergency Levels</h2>
-                <p class="town-article">
-
-                    <picture>
-                         <img src="images/orig-snowy-road-pexels-photo-760971.jpg" alt="Car path through a snowy country road." sizes="50vw"
-                             srcset="images/500-snowy-road-pexels-photo-760971.jpg 500w,
-                             images/800-snowy-road-pexels-photo-760971.jpg 800w,
-                             images/1100-snowy-road-pexels-photo-760971.jpg 1100w" >
-                    </picture>
-
-                    Due to recent heavy weather fluxuations we are being asked to review the weather emergency levels by our local authorities.  "Pursuant of Attorney General opinion 86-023, the Sheriff of a County may declare a Snow Emergency and temporarily close County and Township Roads within his jurisdiction for the preservation of the public peace. Attorney General opinion 97-015 allows the Sheriff to close State and Municipal Roads."<br>
-
-                    <br><strong class="strong1">Snow emergencies have been issued for the following counties:</strong><br><br>
-
-                    <strong class="strong2">No snow emergencies are in effect</strong><br><br>
-
-                    <strong class="strong3">What the levels mean to you</strong><br><br>
-
-                    <strong>Level 1 Snow Emergency:</strong> Roadways are hazardous with blowing and drifting snow. Roads are also icy; drive carefully.<br><br>
-
-                    <strong>Level 2 Snow Emergency:</strong> Roadways are hazardous with blowing and drifting snow. Only those who believe it is necessary to drive should be out on the roadways. Contact your employer to see if you should report to work.<br><br>
-
-                    <strong>Level 3 Snow Emergency:</strong> All roadways are closed to non-emergency personnel. No one else should be out during these conditions unless it is absolutely necessary to travel. All employees should contact their employers to see if they should report to work. Those traveling on the roadways may be subject to arrest.<br><br>
-                </p>
-
-            </article>
-
+            </div><br>
     </main>
 
         <footer class="clearfix">
             <aside>
-                The Mountain Spoke - Bike Shop<br>
-                256 SE Rouse Ave, <br>
-                Bozeman, MT 59719 <br>
-                406-592-5533 <br>
-                mountainspoke@tms.com
+                <figure class="logo">
+                    <img src="images/logo/The-mountain-spoke-logo-blue-right.png" alt="The site logo" height="100">
+                </figure>
+                <h3>The Mountain Spoke - Bike Shop</h3>
+                <p>3950 Valley Commons Drive,<br>
+                    Bozeman, MT 59718 <br><br>
+                    406-592-5533 <br>
+                    mountainspoke@tms.com
+                </p>
+                <h3>Open: Monday - Saturday 10 am - 5 pm<br></h3>
+
             </aside>
 
             <div><br>

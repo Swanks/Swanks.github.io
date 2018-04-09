@@ -5,11 +5,9 @@
     nav button { display:none; }  /* hamburger button does not need to be shown */
 
     nav {
-        background: #e77e23; background: -moz-linear-gradient(top, #e77e23 0%, #e7af23 100%); background: -webkit-linear-gradient(top, #e77e23 0%,#e7af23 100%); background: linear-gradient(to bottom, #e77e23 0%,#e7af23 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e77e23', endColorstr='#e7af23',GradientType=0 );
-
-        margin: 1% 2%;
+        background: #05c3fc; background: -moz-linear-gradient(top, #05c3fc 0%, #000000 100%); background: -webkit-linear-gradient(top, #05c3fc 0%,#000000 100%); background: linear-gradient(to bottom, #05c3fc 0%,#000000 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='05c3fc', endColorstr='#000000',GradientType=0 );
+        margin: 1% 1.8%;
     }
-
     nav ul.hide {display: flex;}
 
     nav ul { padding: 1%; margin: 0 2% 1% 1%; }
@@ -23,33 +21,45 @@
         border-right: 1px solid rgba(255,255,255,0.8);
     }
 
-    article p.town-article img { width: 29.333%; }
-
     /*----------------------------- Picture Gallery ---------------*/
     div.pictureGallery {
-        grid-template-columns: repeat(3, 32%);
+        grid-template-columns: repeat(2, 50%);
     }
     div.pictureGallery figure:hover {
         box-shadow: 3px 3px 6px rgba(0,0,0,0.4);
     }
     /* ------------------------------- Home Page ------------------ */
 
-    #triCities p {
-        color: #263BB2;
-        font-size: 1.6vw;
-        font-weight: 600;
-        padding: 2% 2%;
-        margin: 1% 5%;
+    /* --------------------------------- Tours ------------------------------ */
+    div.adventures {
+        grid-template-columns: repeat(4, 25%);
     }
 
-    #triCities ul li{
-        color: #55ad0d;
-        font-size: 1.5vw;
-        font-weight: 600;
-        padding: 1% 6%;
-        margin: 1% 1%;
-        list-style-type:square;
+    div.adventures figure figcaption {
+        font-size: 1.5rem;
+        margin: 0% -40% 0% 0%;
+        padding: 0% 0%  0% 0%;
     }
 
+
+
+
+    /* ----------------------- Footer -----------------------------*/
+    footer img {
+        padding: 0% 0%;
+        max-width: 150%;
+    }
+
+    footer img {
+        margin: 1% auto;
+        padding: 2% 1%;
+        max-width: 75%;
+    }
+
+    footer .socialmedia {
+        margin: 1% auto;
+        padding: 1% 1%;
+        max-width: 100%;
+    }
 
 }

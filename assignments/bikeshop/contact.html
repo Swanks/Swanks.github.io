@@ -3,12 +3,9 @@
     <head >
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
         <title>Snap Weather | Rob Swank | BYU-I</title>
-
         <meta name="author" content="Rob Swank">
-
-        <meta name="description" content="BYU-I CIT-230:09, Rob Swank, final project - Create a fake bike shop in Bozeman Montana">
+        <meta name="The Mountain Spoke" content="BYU-I CIT-230:09, Rob Swank, final project - Create a fictious bike shop in Bozeman Montana">
 
         <!-- external style references in the proper cascading order -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300" rel="stylesheet">
@@ -34,7 +31,7 @@
 
         <header class="clearfix">
             <figure class="logo">
-                <img src="images/logo/The-mountain-spoke-logo-blue-right.png" alt="The site logo" height="100">
+                <img src="images/logo/The-mountain-spoke-logo-black-right.png" alt="The site logo" height="100">
             </figure>
 
             <h1>The Mountain Spoke</h1>
@@ -43,7 +40,7 @@
 
         <!-- site navigation use placeholder references -->
 
-        <nav>
+        <nav class="clearfix">
             <button onclick="toggleNavMenu()">&#9776;</button>
             <ul id="primaryNav" class="hide mainmenu">
                 <li><a href="index.html">Home</a></li>
@@ -56,9 +53,8 @@
         </nav>
 
 
-        <main>
-            <h2>Contact</h2>
-            <figure class="mainImg">
+        <main class="clearfix">
+             <figure class="mainImg">
                 <img src="images/pexels-photo-459225_1100.jpg" alt="A Nice morning in Greenville Texas" sizes="100vw"
                      srcset="images/pexels-photo-459225_500.jpg 500w,
                              images/pexels-photo-459225_800.jpg 800w,
@@ -66,101 +62,62 @@
                 <figcaption>The View From The Lake</figcaption>
             </figure>
 
-            <section id="weatherSummary">
-                <h3>Weather Summary</h3>
-                <p>Current Temperature:  <span id="tempF" >50</span>&deg;F</p>
-                <div class="highlow">
-                    <p>High: <span id="high">55</span>&#176; F</p>
-                    <p>Low: <span id="low">25</span>&#176; F</p>
-                </div>
-                <div class="currentWeather">
-                    <p>Current Conditions: <span id="cConditions">Sunny</span></p>
-                    <picture>
-                        <img id="weatherIcon" src="images/sunny.png" alt="Weather Icon" height="50">
-                    </picture>
-                </div>
-                <div class="currentConditions">
-                    <p>Precipitation: <span id="percip">5</span> inches</p>
-                    <p>Humidity: <span id="humidity">50</span></p>
-                    <p>Wind Speed: <span id="wSpeed">5</span> mph</p>
-                    <p>Windchill: <span id="windChill">45</span>&#176; F</p>
+            <h2>We would love to see you</h2>
+            <h3>Were just off of HWY 191 and Ferguson Ave</h3>
 
-                    <p> Weather Forecast: <span id="wForecast"></span></p>
-                </div>
-            </section>
-
-            <section class="weatherForecast">
-                <h3>10 Day Forecast</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Day 1</th>
-                            <th>Day 2</th>
-                            <th>Day 3</th>
-                            <th>Day 4</th>
-                            <th>Day 5</th>
-                            <th>Day 6</th>
-                            <th>Day 7</th>
-                            <th>Day 8</th>
-                            <th>Day 9</th>
-                            <th>Day 10</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><img src="images/sunny-50.png" alt="Weather Day 1" id = "iconDay0"><br> High <span id="highDay0"> </span>  &#176;F<br><br>Low <span id="lowDay0"> </span> &#176;F</td>
-                            <td><img src="images/sunny-50.png" alt="Weather Day 2" id = "iconDay1"><br> High <span id="highDay1"> </span>  &#176;F<br><br>Low <span id="lowDay1"> </span> &#176;F</td>
-                            <td><img src="images/sunny-50.png" alt="Weather Day 3" id = "iconDay2"><br> High <span id="highDay2"> </span>  &#176;F<br><br>Low <span id="lowDay2"> </span> &#176;F</td>
-                            <td><img src="images/sunny-50.png" alt="Weather Day 4" id = "iconDay3"><br> High <span id="highDay3"> </span>  &#176;F<br><br>Low <span id="lowDay3"> </span> &#176;F</td>
-                            <td><img src="images/sunny-50.png" alt="Weather Day 5" id = "iconDay4"><br> High <span id="highDay4"> </span>  &#176;F<br><br>Low <span id="lowDay4"> </span> &#176;F</td>
-                            <td><img src="images/sunny-50.png" alt="Weather Day 6" id = "iconDay5"><br> High <span id="highDay5"> </span>  &#176;F<br><br>Low <span id="lowDay5"> </span> &#176;F</td>
-                            <td><img src="images/sunny-50.png" alt="Weather Day 7" id = "iconDay6"><br> High <span id="highDay6"> </span>  &#176;F<br><br>Low <span id="lowDay6"> </span> &#176;F</td>
-                            <td><img src="images/sunny-50.png" alt="Weather Day 8" id = "iconDay7"><br> High <span id="highDay7"> </span>  &#176;F<br><br>Low <span id="lowDay7"> </span> &#176;F</td>
-                            <td><img src="images/sunny-50.png" alt="Weather Day 9" id = "iconDay8"><br> High <span id="highDay8"> </span>  &#176;F<br><br>Low <span id="lowDay8"> </span> &#176;F</td>
-                            <td><img src="images/sunny-50.png" alt="Weather Day10" id = "iconDay9"><br> High <span id="highDay9"> </span>  &#176;F<br><br>Low <span id="lowDay9"> </span> &#176;F</td>
-                         </tr>
-                    </tbody>
-                </table>
-            </section>
-
-            <article>
-                <h2>Historic  Greenville Tour</h2>
-                <p class="town-article">
-
-                    <picture>
-                        <img src="images/pexels-photo-208698-1100.jpg" alt="Down Town Greenville Historic Store." sizes="50vw"
-                        srcset="images/pexels-photo-208698-1100.jpg 1100w,
-                                images/pexels-photo-208698-800.jpg 800w,
-                                images/pexels-photo-208698-500.jpg 500w" >
-                    </picture>
-
-                    Stroll along the route of Greenville's Historic Downtown Walking Tour for a glimpse into the activities and lifestyles of the people who settled our city and made it prosper.<br><br>
-
-                    Learn why locals never tied their horses to lamp posts, how the water company proved the new plumbing worked, and why Elvis came to Greenville. <br><br>
-
-                    Find out why the county has had seven courthouses, where the first train steamed into town, and when local mail service began.<br>
-
-
+            <section id="findus">
+            <aside class="contact">
+                <figure class="logo">
+                    <img src="images/logo/The-mountain-spoke-logo-blue-left.png" alt="The site logo" height="100">
+                </figure>
+                <h3>The Mountain Spoke - Bike Shop</h3>
+                <p class="contact">3950 Valley Commons Drive,<br>
+                    Bozeman, MT 59718 <br><br>
+                    406-592-5533 <br>
+                    mountainspoke@tms.com
                 </p>
+                <h3>Open: Monday - Saturday 10 am - 5 pm<br></h3>
 
-            </article>
+            </aside><br>
 
-    </main>
+            </section>
+            <section id="map">
+                <iframe width=100% height="500" frameborder="3" scrolling="no" marginheight="0" marginwidth="0" style="border:0" allowfullscreen  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10586.898018671325!2d-111.09904028888309!3d45.67172847192238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1523194340224"></iframe>
+
+
+
+            </section>
+
+
+            <h3> Please fill out the form if you would like a representative to contact you:</h3>
+            <!--  form  -->
+            <form action="thankyou.html" method="get" enctype="multipart/form-data" name="storm">
+                <!-- User contact info -->
+                <fieldset>
+                    <legend><span>Customer Information</span></legend>
+                    <label><span>Full Name:</span><input name="name" type="text" placeholder="Full Name" pattern="[a-zA-Z -._]{5,99}" required></label>
+                    <label><span>Email Address:</span><input name="email" type="email" placeholder="my.email@address.com"></label>
+                    <label><span>Phone Number:</span><input name="phone" type="tel" pattern="[0-9]{7,20}" placeholder="15131112222" required></label>
+                    <label><span> Zip Code:</span> <input name="zipcode" type="number" placeholder="Zip Code" required></label><br>
+
+                    <label><span>Additional Comments:</span></label>
+                    <textarea name="message" style="width:800px; height:100px" >
+    Please provide any additional information.
+                    </textarea><br>
+
+                    <input type="submit" value="Submit" class="submit"> <br><br>
+                    <input type="reset">
+                  </fieldset>
+                </form>
+
+        </main>
 
         <footer class="clearfix">
-            <aside>
-                The Mountain Spoke - Bike Shop<br>
-                256 SE Rouse Ave, <br>
-                Bozeman, MT 59719 <br>
-                406-592-5533 <br>
-                mountainspoke@tms.com
-            </aside>
-
             <div><br>
                 <a class="socialmedia" target="_blank" href="https://www.facebook.com/"><img class="icon" src="images/facebook.png" alt="facebook"></a>
                 <a class="socialmedia" target="_blank" href="https://www.instagram.com/"><img class="icon" src="images/instagram.png" alt="instagram"></a>
                 <a class="socialmedia" target="_blank" href="https://www.youtube.com/"><img class="icon" src="images/youtube.png" alt="youtube"></a>
-            </div>
+            </div><br>
 
             <p>&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate"></span></p>
         </footer>

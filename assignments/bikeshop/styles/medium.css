@@ -1,75 +1,59 @@
 @media only screen and (min-width: 37.5em) {
   /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
 
-    /* show the 10-day forecast with the medium view and up */
-    section.weatherForecast {
-        display: flex;
-        flex-direction: column;
-        overflow-x: scroll;
+    /* ------------------- Navigation Bar -------------------------------- */
+    nav button { display:none; }  /* hamburger button does not need to be shown */
+
+    nav {
+        background: #05c3fc; background: -moz-linear-gradient(top, #05c3fc 0%, #000000 100%); background: -webkit-linear-gradient(top, #05c3fc 0%,#000000 100%); background: linear-gradient(to bottom, #05c3fc 0%,#000000 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='05c3fc', endColorstr='#000000',GradientType=0 );
+        margin: 2% 2%;
     }
 
-    .weatherForecast th {
-        text-align: center;
-        background-color: #9CABFF;
-        color: #18286D;
+    nav ul.hide {display: flex;}
+
+    nav ul { padding: 1%; margin: 0% 2% 1% 1%; }
+
+    nav ul li { display: inline-flex; }
+
+    nav ul li a {
         font-size: 1em;
-        padding: 1rem;
-        border: 1px solid #263BB2;
+        padding: .8rem 1rem;
+        border: none;
+        border-right: 1px solid rgba(255,255,255,0.8);
     }
 
-    .weatherForecast td {
-        text-align: center;
-        color: #18286D;
-        font-size: 1.1em;
-        padding: 1rem;
-        border: 1px solid #263BB2;
+    /* --------------------------------- Tours ------------------------------ */
+    div.adventures {
+        grid-template-columns: repeat(2, 50%);
+        grid-gap: 2%;
+        justify-content: center;
     }
-    .weatherForecast tbody {
-        text-align: center;
-        font-size: 1em;
+    div.adventures figure figcaption {
+        font-size: 3.2vw;
+        margin: -1% -40% 2% 0%;
+        padding: 2% 20%  0% 0%;
     }
 
-    .weatherForecast td:hover {background-color: #ffd98f;}
+    /* ----------------------- Footer -----------------------------*/
+    footer img {
+        margin: 1% auto;
+        padding: 1% 1%;
+        max-width: 60%;
+    }
 
-    article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
+    footer .socialmedia {
+        margin: 0% auto;
+        padding: 0% 2%;
+        max-width: 75%;
+    }
 
-    /*----------------------------- Picture Gallery ---------------*/
+    /*--------------------- Picture Gallery ------------------------*/
     div.pictureGallery {
         grid-template-columns: repeat(2, 50%);
         grid-gap: 2%;
     }
 
-    /* ------------------------------- Home Page ------------------ */
-    #triCities h3 {
-        color: #55ad0d;
-        font-size: 4vw;
-        margin: 4% 10%;
-    }
+    /* ----------------------- Home Page -------------------------- */
 
-    #triCities {
-        display: grid;
-        grid-template-columns: repeat(3, 33%);
-        align-content: center;
-        padding: 1% 2%;
-        border: none;
-    }
-
-    #triCities p {
-        color: #263BB2;
-        font-size: 2.2vw;
-        font-weight: 600;
-        padding: 2% 2%;
-        margin: 1% 5%;
-
-    }
-
-    #triCities ul li{
-        color: #55ad0d;
-        font-size: 1.9vw;
-        font-weight: 600;
-        padding: 1% 6%;
-        margin: 1% 1%;
-        list-style-type:square;
-    }
 
 }
