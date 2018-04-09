@@ -379,8 +379,48 @@
 
     table tbody tr:nth-child(even){background-color: rgba(222,184,135,.15);}
 
+    /* --------------------------------- index ------------------------------ */
+    div.intro {
+        display: grid;
+        grid-template-columns: repeat(1, 98%);
+        grid-gap: 1px;
+        padding: 1px;
+    }
+    div.intro figure img {
+        width: 80%
+        position: relative;
+        margin: 0% 0%;
+        padding: 0% 0%;
+        z-index: -1;
+    }
+    div.intro figure figcaption {
+        /*    background-color: rgba(222,184,135,.50); */
+        background-color: rgba(0, 0, 0,.9);
+        color: #ffffffff;
+        text-align: center;
+        font-style: bold;
+        font-size: 1.8rem;
+        margin: -1% -13% 6% 0%;
+        padding: 2% 0%  0% 1%;
+        z-index: 1;
+    }
+    div.intro figure h3 {
+        font-size: 1.6rem;
+        margin: 0% 0%;
+        padding: 0% 0%;
+        z-index: 1;
+    }
 
-    /* --------------------------------- Tours ------------------------------ */
+    div.intro figure p {
+        font-size: 1.2rem;
+        margin: 1% 4%;
+        padding: 1% 0%;
+        z-index: 1;
+    }
+
+
+
+    /* --------------------------------- Adventures ------------------------------ */
     div.adventures {
         display: grid;
         grid-template-columns: repeat(1, 98%);
@@ -400,14 +440,23 @@
         color: #ffffffff;
         text-align: center;
         font-style: bold;
-        font-size: 4.6vw;
-        margin: -1% -13% 2% 0%;
+        font-size: 1.8rem;
+        margin: -1% -13% 6% 0%;
         padding: 2% 0%  0% 1%;
         z-index: 1;
     }
-    div.adventures figure ul li {
-        list-style-type: none;
+    div.adventures figure h3 {
+        font-size: 1.6rem;
+        margin: 0% 0%;
+        padding: 0% 0%;
+        z-index: 1;
+    }
 
+    div.adventures figure p {
+        font-size: 1.2rem;
+        margin: 1% 4%;
+        padding: 1% 0%;
+        z-index: 1;
     }
 
 

@@ -22,16 +22,21 @@
         border-right: 1px solid rgba(255,255,255,0.8);
     }
 
-    /* --------------------------------- Tours ------------------------------ */
+
+    /* --------------------------------- index ------------------------------ */
+    div.intro {
+            grid-template-columns: repeat(2, 50%);
+            grid-gap: 2%;
+            justify-content: center;
+        }
+
+
+
+    /* --------------------------------- Adventures ------------------------------ */
     div.adventures {
         grid-template-columns: repeat(2, 50%);
         grid-gap: 2%;
         justify-content: center;
-    }
-    div.adventures figure figcaption {
-        font-size: 3.2vw;
-        margin: -1% -40% 2% 0%;
-        padding: 2% 20%  0% 0%;
     }
 
     /* ----------------------- Footer -----------------------------*/

@@ -35,12 +35,26 @@
         grid-template-columns: repeat(4, 25%);
     }
 
-    div.adventures figure figcaption {
-        font-size: 1.5rem;
+    /*    div.adventures figure figcaption {
+        font-size: 2.1rem;
         margin: 0% -40% 0% 0%;
         padding: 0% 0%  0% 0%;
     }
 
+   div.adventures figure h3 {
+        font-size: 1.8vw;
+        margin: 0% 0%;
+        padding: 0% 0%;
+        z-index: 1;
+    }
+
+    div.adventures figure p {
+        font-size: 1.4vw;
+        margin: 1% 4%;
+        padding: 1% 0%;
+        z-index: 1;
+    }
+*/
 
 
 
