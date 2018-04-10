@@ -90,27 +90,21 @@
         <fieldset>
             <legend><span>The Continental Divide Trek Sign-up</span></legend>
             <label><span>Full Name:*</span><input name="name" type="text" placeholder="Dudley Do-Right" pattern="[a-zA-Z -._]{5,99}" required></label>
+
+            <label><span> Date of Birth:*</span> <input name="dob" type="text" placeholder="MM/DD/YYYY" required></label>
+
             <label><span>Complete Address:*</span><input name="address" type="text" placeholder="123 Whiplash Lane, Ripsaw Falls, MN" required></label>
+
+            <label><span> State or Country:*</span> <input name="StateOrCountry" type="text" placeholder="Pandora" pattern="[a-zA-Z -._]{5,99}" required></label>
+
             <label><span> Zip Code:*</span> <input name="zipcode" type="number" placeholder="98765" required></label>
 
-            <label><span>Country:</span>
-                <input list="country" placeholder="Country" >
-                <datalist id="country">
-                    <option value="United States"></option>
-                    <option value="Canada"></option>
-                    <option value="Mexico"></option>
-                    <option value="South America"></option>
-                    <option value="Eourupe"></option>
-                    <option value="Africa"></option>
-                </datalist>
-            </label>
-
             <label><span>Email Address:</span><input name="email" type="email" placeholder="my.email@address.com"></label>
+
             <label><span>Phone Number:*</span><input name="phone" type="tel" pattern="[0-9]{7,20}" placeholder="15131112222" required></label>
             <i>*  Indicates required fields</i>
 
-
-            <label><span>Additional Information, Restrictions, we need to be aware of please:</span></label>
+            <label><span>Additional Accommodations, Information, Restrictions, we need to be aware of please:</span></label>
             <textarea name="message" style="width:680px; height:150px" > Please provide any additional information.</textarea><br>
 
             <input type="submit" value="Submit" class="submit"> <br><br>
