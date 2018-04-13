@@ -4,6 +4,14 @@ function toggleNavMenu() {
     document.getElementById("primaryNav").classList.toggle("hide");
 }
 
+// json accordion jQuery
+
+$(document).ready(function(){
+    $( function() {
+        $( "#accordion" ).accordion();
+    } );
+});
+
 // Wayfinding element
 //Active navigation script
 
@@ -64,6 +72,3 @@ document.getElementById("currentdate").innerHTML = weekday + ", " + date.getDate
 function sliderInput(custRating) {
     document.getElementById("severityRating").innerHTML = custRating;
 }
-
-
-

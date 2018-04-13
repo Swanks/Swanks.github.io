@@ -253,7 +253,7 @@
         color: #e77e23;
         box-shadow: 1px 1px 8px #05c3fc ;
     }
-    /* ---------------Storm Center Buttons, etc. -----------------*/
+    /* --------------- Buttons, etc. -----------------*/
 
     /* Danger level container */
     .dangerdanger {
@@ -342,7 +342,32 @@
     input:focus {
         box-shadow: 1px 1px 6px rgba(0,0,0,0.9) inset;
     }
-    /* ------------------------------- Home Page ---------------------------- */
+    /* ------------------------------- Shopping  Page ---------------------------- */
+
+    #accordion p {
+        margin: 0 4%;
+        font-size: 1.5rem;
+        line-height: 1.4em;
+    }
+    #accordion img {
+        width: 90%;
+    }
+    #accordion h5 {
+        color: #E77E23;
+        text-align: center;
+        text-emphasis: bold;
+        font-size: 2.2rem;
+        padding: 3% 1%;
+    }
+    .price {
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        color: #0066ff;
+        font-size: 1.9rem;
+        padding-bottom: 15px;
+    }
+
 
     /* --------------------------------- Table ------------------------------ */
 
