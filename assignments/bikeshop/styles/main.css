@@ -328,7 +328,7 @@
 
 
     /* ---------------------------------  Servie Table ------------------------------ */
-    table.servicPricing, tbody {
+    table.ourServices, tbody {
         border: 5px solid #000000;
         text-align:left;
         border-collapse: collapse;
@@ -337,25 +337,25 @@
         margin: 1% 1%;
 
     }
-    table.servicPricing, tr, td {
+    table.ourServices, tr, td {
         border: 3px solid;
         border-color: #000000;
         padding: 10px;
     }
 
-    table.servicPricing tr td {
+    table.ourServices tr td {
         color:#000000;
         padding-bottom:2%;
         padding-top: 2%;
     }
 
-    table.servicPricing tbody, th{
+    table.ourServices tbody, th{
         background-color:#fcf8f4;
     }
 
-    table.servicPricing tbody tr:nth-child(odd){background-color: rgba(222,184,135,.50);}
+    table.ourServices tbody tr:nth-child(odd){background-color: rgba(222,184,135,.50);}
 
-    table.servicPricing tbody tr:nth-child(even){background-color: rgba(222,184,135,.15);}
+    table.ourServices tbody tr:nth-child(even){background-color: rgba(222,184,135,.15);}
 
 
     /* -------- Origional -----*/

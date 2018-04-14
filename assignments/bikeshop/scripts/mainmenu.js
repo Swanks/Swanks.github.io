@@ -114,12 +114,12 @@ request.responseType = 'json';
 request.send();
 
 request.onload = function() {
-    var services = request.response;
-    showData(services);
+    var ourServices = request.response;
+    showData(ourServices);
 }
 
 function showData(jsonObj) {
-    var data = jsonObj['services'];
+    var data = jsonObj['ourServices'];
     var price = "";
     var service = "";
 
