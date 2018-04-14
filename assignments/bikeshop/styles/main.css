@@ -253,96 +253,7 @@
         color: #e77e23;
         box-shadow: 1px 1px 8px #05c3fc ;
     }
-    /* --------------- Buttons, etc. -----------------*/
-
-    /* Danger level container */
-    .dangerdanger {
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-        display: block;
-        position: relative;
-        padding-left: .5rem;
-        margin-bottom: .2rem;
-        font-size: 1.1rem;
-    }
-
-    /* Hide the browser's default radio button */
-    .dangerdanger input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-}
-
-    /* customize radio button */
-    .checker {
-        position: absolute;
-        top: 10px;
-        left: 0px;
-        width: 1.5rem;
-        background-color: #05c3fc;
-        border-radius: 20%;
-    }
-
-    /* Moving mouse on top of, add a deep lavendar background color */
-    .dangerdanger:hover input ~ .checker {
-        background-color: #ff0023;
-    }
-
-    /* When the radio button checked, add orange background */
-    .dangerdanger input:checked ~ .checker {
-        background-color: #e77e23;
-    }
-
-    /* Radio button check mark  - hidden when not checked */
-    .checker:after {
-        content: "";
-        position: absolute;
-        display: none;
-    }
-    /*  Setting up the check marks.  What a pain! */
-    label span.danger {
-        padding: .5em 1em .5em 2em;
-        font-size: 1.1em;
-        font-weight: 400;
-    }
-
-    /* show where checked, after it is checked */
-    .dangerdanger input:checked ~ .checker:after {
-        display: block;
-    }
-
-    /* Setting up the check mark size*/
-    .dangerdanger .checker:after {
-        top: 2px;
-        left: 4px;
-        width: 15px;
-        height: 15px;
-        border-radius: 20%;
-        background: #000000;
-    }
-
-    label input {
-        background-color: #edf0f2;
-        color: #000000;
-        border: solid 1px #05c3fc;
-        border-radius: 2px;
-        font-size: 1.2em;
-        width: 30rem;
-        max-width: 30rem;
-        background-repeat: no-repeat;
-    }
-
-    label #rating {
-        max-width: 30rem;
-    }
-
-    /* input with focus*/
-    input:focus {
-        box-shadow: 1px 1px 6px rgba(0,0,0,0.9) inset;
-    }
-    /* ------------------------------- Shopping Accordion Page ---------------------------- */
+       /* ------------------------------- Shopping Accordion Page ---------------------------- */
     /*----------- Accordion ----------------*/
 
 
@@ -416,8 +327,38 @@
 
 
 
-    /* --------------------------------- Table ------------------------------ */
+    /* ---------------------------------  Servie Table ------------------------------ */
+    table.servicPricing, tbody {
+        border: 5px solid #000000;
+        text-align:left;
+        border-collapse: collapse;
+        height:550px;
+        width:auto;
+        margin: 1% 1%;
 
+    }
+    table.servicPricing, tr, td {
+        border: 3px solid;
+        border-color: #000000;
+        padding: 10px;
+    }
+
+    table.servicPricing tr td {
+        color:#000000;
+        padding-bottom:2%;
+        padding-top: 2%;
+    }
+
+    table.servicPricing tbody, th{
+        background-color:#fcf8f4;
+    }
+
+    table.servicPricing tbody tr:nth-child(odd){background-color: rgba(222,184,135,.50);}
+
+    table.servicPricing tbody tr:nth-child(even){background-color: rgba(222,184,135,.15);}
+
+
+    /* -------- Origional -----*/
     table, tbody {
         border: 5px solid #000000;
         text-align:left;
@@ -446,6 +387,10 @@
     table tbody tr:nth-child(odd){background-color: rgba(222,184,135,.50);}
 
     table tbody tr:nth-child(even){background-color: rgba(222,184,135,.15);}
+    /* -------- Origional -----*/
+
+
+
 
     /* --------------------------------- index ------------------------------ */
     div.intro {
@@ -485,7 +430,7 @@
         padding: 1% 0%;
         z-index: 1;
     }
-
+    /* ----------------------- Service ---------------------------------------*/
 
      /* ------------------------------- Footer ------------------------------- */
 

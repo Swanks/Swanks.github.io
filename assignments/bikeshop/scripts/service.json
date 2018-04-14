@@ -1,0 +1,10 @@
+{ "services Pricing" : [
+{ "service": "Bike Tune-Up", "price" :  "$45.00" },
+{ "service": "Department Store Bike Tune-Up", "price" :  "$75.00"},
+{ "service": "Flat Tire Change", "price" :  "$12.00"},
+{ "service": "Brake Bleed", "price" :  "$23.00"},
+{ "service": "Wheel True ", "price" :  "$27.00"},
+{ "service": "Bike Build", "price" :  "$65.00"},
+{ "service": "Wheel Build (& Up+ parts)", "price" :  "$65.00"},
+{ "service": "Minimum Labor Charge", "price" :  "$25.00"},
+]}
