@@ -4,14 +4,6 @@ function toggleNavMenu() {
     document.getElementById("primaryNav").classList.toggle("hide");
 }
 
-// json accordion jQuery
-
-$(document).ready(function(){
-    $( function() {
-        $( "#accordion" ).accordion();
-    } );
-});
-
 // Wayfinding element
 //Active navigation script
 
@@ -66,9 +58,47 @@ var whichmonth = month[date.getMonth()];
 
 document.getElementById("currentdate").innerHTML = weekday + ", " + date.getDate() + " " + whichmonth + " " + date.getFullYear();
 
+// jSon accordion in Sales menu
+/* Not working, trying Java for now.
 
-// Severity slider script
+    $(document).ready(function(){
+        $( function() {
+            $( "#accordion" ).accordion();
+        } );
+    });
+*/
 
-function sliderInput(custRating) {
-    document.getElementById("severityRating").innerHTML = custRating;
+/*  Java version - This is working, but not all the way. */
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        /* Toggle between adding and removing the "active" class,
+        to highlight the button that controls the panel */
+        this.classList.toggle("active");
+
+        /* Toggle between hiding and showing the active panel */
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    });
 }
+
+
+
+ //  Slider in sales menu
+
+ $(".slider > div:gt(0)").hide();
+
+ setInterval(function() {
+   $('.slider > div:first-child')
+     .fadeOut()
+     .next()
+     .fadeIn()
+     .end()
+     .appendTo('.slider');
+ }, 3000);
