@@ -446,6 +446,10 @@
     footer img {
         max-width: 50%;
     }
+    footer a {
+        color: #ffffff;
+    }
+
     footer.socialmedia {
         margin: 3% auto;
         padding: 3% 1%;
