@@ -115,7 +115,7 @@
     main figure.mainImg {
         width: 99%;
         margin: 0% 1%;
-        padding: % 0% 1% .5%;
+        padding: 0% 0% 1% .5%;
 
     }
 
@@ -152,7 +152,7 @@
     div.pictureGallery figure figcaption {
         color: #05c3fc;
         text-align: center;
-        text-emphasis: bold;
+        font-weight: bold;
         font-size: 1.5rem;
         padding: 2% 1%;
     }
@@ -295,7 +295,7 @@
     .accordion h5 {
         color: #E77E23;
         text-align: center;
-        text-emphasis: bold;
+        font-weight: bold;
         font-size: 2.2rem;
         padding: 3% 1%;
     }
@@ -400,7 +400,7 @@
         padding: 1px;
     }
     div.intro figure img {
-        width: 80%
+        width: 80%;
         position: relative;
         margin: 0% 0%;
         padding: 0% 0%;
@@ -409,9 +409,9 @@
     div.intro figure figcaption {
         /*    background-color: rgba(222,184,135,.50); */
         background-color: rgba(0, 0, 0,.9);
-        color: #ffffffff;
+        color: #ffffff;
         text-align: center;
-        font-style: bold;
+        font-weight: bold;
         font-size: 1.8rem;
         margin: -1% -13% 6% 0%;
         padding: 2% 0%  0% 1%;
