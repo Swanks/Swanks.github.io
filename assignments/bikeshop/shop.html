@@ -62,31 +62,6 @@
                 <p>We are locally owned and operated.  We feel that the most important part of purchasing a bike is the relationship that we establish with you on a long term basis. We are committed to offering you friendly professional experience regardless of your cycling goals. Your riding experience is important to us, so a complete customer fit and bike sizing is performed by a qualified technician as part of each purchase. Every bike we sell includes one year of free adjustments and labor on flat repairs for as long as you own the bike!</p>
             </section>
 
-            <!-- Slider section -->
- <!--  Disabling for now, need to get the accordion section going.
-            <div class="center">
-                <div class="slider">
-
-                    <div><img src="iimages/shop/ghost-lanao-wm-500.jpg" alt="Ghost - Lanao - Women's - Mountain Bike">
-                        <h4 class="data"> Ghost - Lanao - Women's - Mountain Bike</h4></div>
-
-                    <div><img src="images/shop/salsa-beargrease-carbon-500.jpg" alt="Salsa - Beargrease - Carbon - Mountain Bike">
-                        <h4 class="data">Salsa - Beargrease - Carbon - Mountain Bike</h4></div>
-
-                    <div><img src="images/shop/Anthem-Advanced-0-Color-A-Electric-Blue-500.jpg" alt="GHOST Lanao FS">
-                        <h4 class="data"> Giant - Anthem Advanced 0 - Mountain Bike</h4></div>
-
-                    <div><img src="images/shop/cannondale-trigger1-500.jpg" alt="Cannondale - Trigger 1 - Mountain Bike">
-                        <h4 class="data">Cannondale - Trigger 1 - Mountain Bike</h4></div>
-
-                    <div><img src="images/shop/cannondale-trail2-500.jpg" alt="Cannondale - Trail 2 Mountain Bike">
-                        <h4 class="data">Cannondale - Trail 2 Mountain Bike</h4></div>
-
-                    <div><img src="images/shop/ra15_skarn-sport_bluesilver_1-500.jpg" alt="Raleigh - Skarn Sport - Mountain Bike">
-                        <h4 class="data">Raleigh - Skarn Sport - Mountain Bike</h4></div>
-                </div>
-            </div>
--->
 
            <!-- <section id="shopping"> -->
 
@@ -151,6 +126,45 @@
             </div><!--end .accordion-section #6-content-->
 
             <!-- </section> -->
+            <!-- Slider section -->
+            <div>
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+
+            <div class="showSlides">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(-1)">&#10095;</a>
+
+                <div class="theSlides"><img src=" images/shop/ghost-lanao-wm-500.jpg" alt="Ghost - Lanao - Women's - Mountain Bike">
+                    <h4> Ghost - Lanao - Women's - Mountain Bike</h4>
+                </div>
+
+                <div class="theSlides"><img src="images/shop/salsa-beargrease-carbon-500.jpg" alt="Salsa - Beargrease - Carbon - Mountain Bike">
+                    <h4 class="data">Salsa - Beargrease - Carbon - Mountain Bike</h4>
+                </div>
+
+                <div class="theSlides"><img src="images/shop/Anthem-Advanced-0-Color-A-Electric-Blue-500.jpg" alt="GHOST Lanao FS">
+                    <h4 class="data"> Giant - Anthem Advanced 0 - Mountain Bike</h4>
+                </div>
+
+                <div class="theSlides"><img src="images/shop/cannondale-trigger1-500.jpg" alt="Cannondale - Trigger 1 - Mountain Bike">
+                    <h4 class="data">Cannondale - Trigger 1 - Mountain Bike</h4>
+                </div>
+
+                <div class="theSlides"><img src="images/shop/cannondale-trail2-500.jpg" alt="Cannondale - Trail 2 Mountain Bike">
+                    <h4 class="data">Cannondale - Trail 2 Mountain Bike</h4>
+                </div>
+
+                <div class="theSlides"><img src="images/shop/ra15_skarn-sport_bluesilver_1-500.jpg" alt="Raleigh - Skarn Sport - Mountain Bike">
+                    <h4 class="data">Raleigh - Skarn Sport - Mountain Bike</h4>
+                </div>
+
+            </div>
 
 
         </main>
@@ -179,7 +193,7 @@
             <p>&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate"></span> | <a href="resources.html">Resourses/Video </a></p>
         </footer>
 
-
+        <script src="scripts/slides.js"></script>
         <script src="scripts/mainmenu.js"></script>
         <!-- <script src"/scripts/jquery-3.3.1.min.js"></script> -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
