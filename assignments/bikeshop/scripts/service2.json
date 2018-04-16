@@ -1,0 +1,14 @@
+// My json table for service pricing.
+    {
+    "services": [
+        { "service": "Bike Tune Up", "price": "$45.00", },
+        { "service": "Department Store Bike - Tune Up", "prince": "$75 and up.", },
+        { "service": "Flat Tire Change", "price": "$12.00 + Tube", },
+        { "service": "Brake Bleed", "price": "$23.00", },
+        { "service": "Bike Build", "price": "$65.00", },
+        { "service": "Fork Seals Replaced", "price": "$35.00 + Seals", },
+        { "service": "Wheel Build", "price": "$75 and up.", },
+        { "service": "Wheel True", "price": "$27.00 & up", },
+        { "service": "Minimum Labour Charge", "price": "$25.00 per hour", },
+        { "service": "Estimates Available Upon Request", "price": null, }
+    ]}
