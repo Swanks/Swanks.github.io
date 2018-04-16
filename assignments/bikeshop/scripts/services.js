@@ -1,6 +1,6 @@
 // Services json
 
-var requestURL= 'https://swanks.github.io/assignments/bikeshop/scripts/service2.json';
+var requestURL= 'https://swanks.github.io/assignments/bikeshop/scripts/service.json';
 var request= new XMLHttpRequest();
 request.open('GET', requestURL, true);
 request.send();
@@ -18,5 +18,4 @@ request.onload = function() {
     document.getElementById('bBuild').innerHTML = serviceData.bBuild;
     document.getElementById('wBuild').innerHTML = serviceData.wBuild;
     document.getElementById('lCharge').innerHTML = serviceData.lCharge;
-    document.getElementById('estimates').innerHTML = null;
 }
