@@ -1,14 +1,13 @@
 // My json table for service pricing.
-    {
-     "serviceType": [
-        { "name": "Bike Tune Up", "price": "$45.00", },
-        { "name": "Department Store Bike - Tune Up", "prince": "$75 and up.", },
-        { "name": "Flat Tire Change", "price": "$12.00 + Tube", },
-        { "name": "Brake Bleed", "price": "$23.00", },
-        { "name": "Bike Build", "price": "$65.00", },
-        { "name": "Fork Seals Replaced", "price": "$35.00 + Seals", },
-        { "name": "Wheel Build", "price": "$75 and up.", },
-        { "name": "Wheel True", "price": "$27.00 & up", },
-        { "name": "Minimum Labour Charge", "price": "$25.00 per hour", },
-        { "name": "Estimates Available Upon Request", "price": null, }
+    {"serviceType": [
+        { "name": "Bike Tune Up", "price": "$45.00" },
+        { "name": "Department Store Bike - Tune Up", "prince": "$75 and up." },
+        { "name": "Flat Tire Change", "price": "$12.00 + Tube" },
+        { "name": "Brake Bleed", "price": "$23.00" },
+        { "name": "Bike Build", "price": "$65.00" },
+        { "name": "Fork Seals Replaced", "price": "$35.00 + Seals" },
+        { "name": "Wheel Build", "price": "$75 and up." },
+        { "name": "Wheel True", "price": "$27.00 & up" },
+        { "name": "Minimum Labour Charge", "price": "$25.00 per hour" },
+        { "name": "Estimates Available Upon Request", "price": null }
     ]}
