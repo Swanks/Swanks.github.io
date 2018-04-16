@@ -408,9 +408,15 @@
         padding-bottom:2%;
         padding-top: 2%;
     }
+    th {
+    color:#FFFFFF;
+    padding-bottom:4%;
+    padding-top: 4%;
+    }
 
-    thead, tfoot, th{
-        background-color:#05c3fc;
+    thead, tfoot {
+        background-color:#000000;
+
     }
 
     table tbody tr:nth-child(odd){background-color: rgba(222,184,135,.50);}
