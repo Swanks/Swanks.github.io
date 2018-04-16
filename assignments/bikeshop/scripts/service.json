@@ -1,10 +1,12 @@
-// My json table for service pricing.
-{ "tuneUp" : "$45.00",
-  "DSTuneUp" : "$75.00",
-  "flat" : "$12.00",
-  "bBleed" : "$23.00",
-  "wTrue" : "$27.00",
-  "bBuild" : "$65.00",
-  "wBuild" : "$65.00",
-  "lCharge" : "$25.00",
-  "estimates" : null }
+
+{
+    "tuneUp" : "$45.00",
+    "DSTuneUp" : "$75.00",
+    "flat" : "$12.00",
+    "bBleed" : "$23.00",
+    "wTrue" : "$27.00",
+    "bBuild" : "$65.00",
+    "wBuild" : "$65.00",
+    "lCharge" : "$25.00",
+    "estimates" : null
+}
