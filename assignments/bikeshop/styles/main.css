@@ -334,67 +334,15 @@
         padding-bottom: 15px;
     }
 
-
-
-    /*----------- slider Section - Sales ----------------*/
-    /*  Taking it back off for now.  Not getting accordion working. */
-
-    .slider { position: relative; }
-
-    .slider > div { position: absolute; }
-
-    /* Stop the picture overlaping  */
-    .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-    }
-
-
-
     /* ---------------------------------  Servie Table ------------------------------ */
-/* ---------------------------------------------------
-    table.ourServices, thead, tbody, tfoot {
+
+    table thead tbody tfoot {
         border: 5px solid #000000;
         text-align:left;
         border-collapse: collapse;
         height:550px;
         width:auto;
-        margin: 1% 1%;
-
-    }
-    table.ourServices, tr, td, th {
-        border: 3px solid;
-        border-color: #000000;
-        padding: 10px;
-    }
-
-    table.ourServices, tr, td, th {
-        color:#000000;
-        padding-bottom:2%;
-        padding-top: 2%;
-    }
-
-    table.ourServices tbody, th{
-        background-color:#fcf8f4;
-    }
-    table.ourServices thead, tfoot {
-        background-color:#fcf8f4;
-
-    }
-
-    table.ourServices tbody tr:nth-child(odd){background-color: rgba(222,184,135,.50);}
-
-    table.ourServices tbody tr:nth-child(even){background-color: rgba(222,184,135,.15);}
--------------------------------------------*/
-    table, thead, tbody, tfoot {
-        border: 5px solid #000000;
-        text-align:left;
-        border-collapse: collapse;
-        height:550px;
-        width:auto;
-        margin: 1% 1%;
+        margin: 2% 2%;
 
     }
     table, th, tr, td {
@@ -409,6 +357,7 @@
         padding-top: 2%;
     }
     th {
+    font-size: 1.3rem;
     color:#FFFFFF;
     padding-bottom:4%;
     padding-top: 4%;
@@ -416,17 +365,27 @@
 
     thead, tfoot {
         background-color:#000000;
-
     }
 
     table tbody tr:nth-child(odd){background-color: rgba(222,184,135,.50);}
 
     table tbody tr:nth-child(even){background-color: rgba(222,184,135,.15);}
 
+    /*----------- slider Section - Sales ----------------*/
 
-    /* -------- Origional -----*/
+    /*  Taking it back off for now.  Not getting accordion working. */
 
+    .slider { position: relative; }
 
+    .slider > div { position: absolute; }
+
+    /* Stop the picture overlaping  */
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
 
 
     /* --------------------------------- index ------------------------------ */

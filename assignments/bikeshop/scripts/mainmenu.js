@@ -105,6 +105,5 @@ for (i = 0; i < acc.length; i++) {
 
 
 // Services json
-// Pulled to seperate file to see if can get it working.
 
-
+// Removed for testing.

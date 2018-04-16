@@ -1,10 +1,9 @@
 // Services json
 
-var requestURL= 'https://swanks.github.io/assignments/bikeshop/scripts/service.json';
+var requestURL='https://swanks.github.io/assignments/bikeshop/scripts/service.json';
 var request= new XMLHttpRequest();
 request.open('GET', requestURL, true);
 request.send();
-
 
 request.onload = function() {
     var serviceData = JSON.parse(request.responseText);
